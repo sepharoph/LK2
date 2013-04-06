@@ -430,7 +430,7 @@ namespace LKCamelot.script.item
             Parent = null;
         }
 
-        public void PickUp(Player player)
+        public void PickUp(Player player)//this is where items are picked up (pick)
         {
             var slot = player.GetFreeSlot();
             if (this is Gold)
@@ -477,12 +477,25 @@ namespace LKCamelot.script.item
 
         public void DeleteGround()
         {
+            Item temp;
+            World.RemoveDynamicObj(m_Map, m_Serial);
+            World.SendToAll(new QueDele(m_Map, new DeleteObject(m_Serial).Compile()));
+            World.NewItems.TryRemove(m_Serial, out temp);
+            Loc = null;
+            World.DBConnect.WriteQue.Enqueue(() => World.DBConnect.DeleteItem(m_Serial));
+        }
+        /*Made multiple changes to this area above to try and resolve issue with items breaking 
+        the squares, and images 
+        staying on the ground after the item is no longer in the actual square (seph)
+        (Original function below)
+                {
             World.SendToAll(new QueDele(m_Map, new DeleteObject(m_Serial).Compile()));
             Item temp;
             World.NewItems.TryRemove(m_Serial, out temp);
             World.RemoveDynamicObj(m_Map, m_Serial);
             World.DBConnect.WriteQue.Enqueue(() => World.DBConnect.DeleteItem(m_Serial));
         }
+        */
 
         public void Delete(Player player)
         {
