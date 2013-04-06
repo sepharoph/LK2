@@ -13,7 +13,7 @@ namespace LKCamelot.script.monster
         public override int Dam { get { return 200; } }
         public override int AC { get { return 115; } }
         public override int Hit { get { return 181; } }
-        public override int XP { get { return 1; } }
+        public override int XP { get { return 1863; } }//changed to reflect blue mummy x3
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 600000; } }
         public override Race Race { get { return Race.Undead; } }
@@ -26,13 +26,15 @@ namespace LKCamelot.script.monster
                 {
                     new LootPackEntry(1, typeof(script.item.ThunderCrossBook), "15d10+225", 1, 1, 1),
                     new LootPackEntry(1, typeof(script.item.TeleportBook), "15d10+225", 1, 1, 1),
-
                     new LootPackEntry(1, typeof(script.item.BattleShield), "15d10+225", 1, 1, 1),
                     new LootPackEntry(1, typeof(script.item.ChestGuard), "15d10+225", 1, 1, 1),
                     new LootPackEntry(1, typeof(script.item.LargeAxe), "15d10+225", 1, 1, 1),
                     new LootPackEntry(1, typeof(script.item.FullHelmet), "15d10+225", 1, 1, 1),
                     new LootPackEntry(1, typeof(script.item.BattleArmor), "15d10+225", 1, 1, 1),
                     new LootPackEntry(25.0, typeof(script.item.Gold), "10d20+3200", 40, 1, 1),
+                    /*should drop Book of Oblivion, (Chest Guard, Large Axe,
+                    Full Helmet, Battle Armor, Battle Shield). Shouldn't drop Thunder Cross, Teleport.
+                    */
                 });
             }
         }
