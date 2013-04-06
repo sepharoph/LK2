@@ -1,0 +1,401 @@
+                case 0x16:
+                    p = new PacketReader(data, data.Count(), false);
+                    var str = p.ReadString();
+                    var str2 = str.Split(' ');
+                    if (str2[0] == "@go")
+                    {
+                        if (str2.Count() > 1)
+                        {
+                            HandleGo(str2[1]);
+                        }
+                    }
+                    else if (str2[0] == "@commands")
+                    {
+                        string cmds = "@go, @bug, @rank, @reset, @automp 0.10, @autohp 0.10, ";
+                        SendPacket(new UpdateChatBox(0xff, 0xff, 1, (short)cmds.Count(), cmds).Compile());
+                        cmds = "@addstat str 100, @remitee ";
+                        SendPacket(new UpdateChatBox(0xff, 0xff, 1, (short)cmds.Count(), cmds).Compile());
+                    }
+                    else if (str[0] == '!')
+                    {
+                        var message = str.Remove(0, 1);
+                        message = "[" + player.Name + "] : " + message;
+                        World.SendToAll(new QueDele(player.Serial, "all", new UpdateChatBox(0xff, 0xff, 0x95, (short)message.Count(), message).Compile()));
+                    }
+                    else if (str[0] == '~')
+                    {
+                        if (player.Name != "SIR" && player.Name != "PATHFINDER")
+                            return;
+
+                        var message = str.Remove(0, 1);
+                        message = "[" + player.Name + "] : " + message;
+                        World.SendToAll(new QueDele(player.Serial, "all", new UpdateChatBox(0x08, 0x02, 0x0, (short)message.Count(), message).Compile()));
+                    }
+                    else if (str == "promote me")
+                    {
+                        var AronNpc = World.NewNpcs.Where(xe => xe.Value.Name == "Aron").FirstOrDefault();
+                        if (AronNpc.Value != null && World.Dist2d(player.X, player.Y, AronNpc.Value.X, AronNpc.Value.Y) < 7
+                            && player.Level >= 80)
+                        {
+                            if (AronStage == 0)
+                            {
+                                string achat = "[Aron]: Bring the life of drug from Alias.";
+                                SendPacket(new UpdateChatBox(0xff, 0xff, 1, (short)achat.Count(), achat).Compile());
+                                AronStage = 4;
+                            }
+                        }
+                    }
+                    else if (str == "give me the life drug")
+                    {
+                        if (player.m_Map == "Village1" && World.Dist2d(player.Loc, new Point2D(90, 173)) <= 4)
+                        {
+                            AliasStage = 1;
+                            string achat = "[Alias]: I have a life drug. Do you need it?";
+                            SendPacket(new UpdateChatBox(0xff, 0xff, 1, (short)achat.Count(), achat).Compile());
+                        }
+                    }
+                    else if (str2[0] == "@bug")
+                    {
+                        if (System.Environment.TickCount - 3000 > lastcmd)
+                        {
+                            lastcmd = System.Environment.TickCount;
+
+                            string bug = player.Name + " : " + str.Substring(4);
+                            Console.WriteLine(bug);
+                            WriteBug(bug);
+                            string achat = "Bug report sent.";
+                            SendPacket(new UpdateChatBox(0xff, 0xff, 1, (short)achat.Count(), achat).Compile());
+                        }
+                        else
+                        {
+                            string achat = "Please wait before issuing another command.";
+                            SendPacket(new UpdateChatBox(0xff, 0xff, 1, (short)achat.Count(), achat).Compile());
+                        }
+                    }
+                    else if (str == "@reset")
+                    {
+                        if (player.GetFreeSlots() > 5)
+                        {
+                            foreach (var it in player.Equipped)
+                            {
+                                it.Unequip(player, it.InvSlot);
+                            }
+
+                            var total = player.m_Str + player.m_Dex + player.m_Men + player.m_Vit + player.Extra;
+                            player.Extra = (ushort)total;
+                            player.m_Str = 0;
+                            player.m_Dex = 0;
+                            player.m_Men = 0;
+                            player.m_Vit = 0;
+                            SendPacket(new UpdateCharStats(player).Compile());
+                        }
+                        else
+                        {
+                            string achat = "Free up 5 slots";
+                            SendPacket(new UpdateChatBox(0xff, 0xff, 1, (short)achat.Count(), achat).Compile());
+                        }
+                    }
+                    else if (str == "give me the magic drug")
+                    {
+                        if (player.m_Map == "Village1" && World.Dist2d(player.Loc, new Point2D(90, 173)) <= 2)
+                        {
+                            AliasStage = 2;
+                            string achat = "[Alias]: I have a magic drug. Do you need it?";
+                            SendPacket(new UpdateChatBox(0xff, 0xff, 1, (short)achat.Count(), achat).Compile());
+                        }
+                    }
+                    else if (str == "yes")
+                    {
+                        if (player.m_Map == "Village1" && World.Dist2d(player.Loc, new Point2D(90, 173)) <= 2
+                            && AliasStage > 0)
+                        {
+                            if (AliasStage == 1)
+                            {
+                                AliasStage = 0;
+                                var newitem = new script.item.potions.PromoteLifeDrug().Inventory(player);
+                                World.NewItems.TryAdd(newitem.m_Serial, newitem);
+                                SendPacket(new AddItemToInventory2(newitem).Compile());
+                            }
+                            if (AliasStage == 2)
+                            {
+                                AliasStage = 0;
+                                var newitem = new script.item.potions.PromoteMagicDrug().Inventory(player);
+                                World.NewItems.TryAdd(newitem.m_Serial, newitem);
+                                SendPacket(new AddItemToInventory2(newitem).Compile());
+                            }
+                        }
+
+                        var AronNpc = World.NewNpcs.Where(xe => xe.Value.Name == "Aron").FirstOrDefault();
+                        if (AronNpc.Value != null && World.Dist2d(player.X, player.Y, AronNpc.Value.X, AronNpc.Value.Y) < 7
+                            && (player.Level >= 80 && player.Level <= 99) || (player.Level == (100 + (20 * player.Promo))))
+                        {
+#if PROMOCAP12
+                            if (player.Promo == 12)
+                                return;
+#else
+                            if (player.Promo == 7)
+                                return;
+#endif
+
+                            if (AronStage >= 1)
+                            {
+                                AronStage = 0;
+                                if (player.Promo == 0)
+                                {
+                                    player.XP = 0;
+                                    player.Level = 101;
+                                    player.Extra += 30;
+                                }
+                                else if (player.Promo >= 1)
+                                {
+                                    player.XP = 0;
+                                    if (player.Promo == 1) player.Extra += 50;
+                                    if (player.Promo == 2) player.Extra += 80;
+                                    if (player.Promo == 3) player.Extra += 120;
+                                    if (player.Promo == 4) player.Extra += 180;
+                                    if (player.Promo == 5) player.Extra += 260;
+                                    if (player.Promo == 6) player.Extra += 360;
+#if PROMOCAP12
+                                    if (player.Promo == 7) player.Extra += 480;
+                                    if (player.Promo == 8) player.Extra += 620;
+                                    if (player.Promo == 9) player.Extra += 780;
+                                    if (player.Promo == 10) player.Extra += 960;
+                                    if (player.Promo == 11) player.Extra += 1160;
+#endif
+                                    if (player.Promo == 6 && player.GetFreeSlots() > 0)
+                                    {
+                                        script.item.Item prize = null;
+                                        if (player.Class == LKCamelot.library.Class.Knight)
+                                            prize = new script.item.Excalibur().Inventory(player);
+                                        if (player.Class == LKCamelot.library.Class.Swordsman)
+                                            prize = new script.item.DaeungDaegum().Inventory(player);
+                                        if (player.Class == LKCamelot.library.Class.Wizard)
+                                            prize = new script.item.Kassandra().Inventory(player);
+                                        if (player.Class == LKCamelot.library.Class.Shaman)
+                                            prize = new script.item.TaegkFan().Inventory(player);
+                                        try
+                                        {
+                                            World.NewItems.TryAdd(prize.m_Serial, prize);
+                                            SendPacket(new AddItemToInventory2(prize).Compile());
+                                        }
+                                        catch { Console.WriteLine("failed to add promo item"); }
+                                    }
+
+                                    player.Level++;
+
+                                }
+                                SendPacket(new SetLevelGold(player).Compile());
+                                SendPacket(new UpdateCharStats(player).Compile());
+                            }
+                        }
+
+                    }
+                    else if (str2[0] == "@automp")
+                    {
+                        if (!player.AutoMana)
+                            player.AutoMana = true;
+                        else
+                            player.AutoMana = false;
+                        if (str2.Count() > 1)
+                        {
+                            try
+                            {
+                                var temp = Convert.ToDouble(str2[1]);
+                                if (temp > 1) temp = 1;
+                                if (temp < 0) temp = 0;
+                                player.AutoManaP = temp;
+                            }
+                            catch { }
+                        }
+                    }
+                    else if (str2[0] == "@addstat")
+                    {
+                        try
+                        {
+                            var extras = Convert.ToUInt16(str2[2]);
+                            var stat = str2[1];
+                            if (player.Extra >= extras)
+                            {
+                                if (stat == "str") player.AddStat(ref player.m_Str, extras);
+                                if (stat == "men") player.AddStat(ref player.m_Men, extras);
+                                if (stat == "dex") player.AddStat(ref player.m_Dex, extras);
+                                if (stat == "vit") player.AddStat(ref player.m_Vit, extras);
+                                SendPacket(new UpdateCharStats(player).Compile());
+                            }
+                        }
+                        catch
+                        {
+                            string rankr = "Failed. Use: @addstat stat amount ";
+                            SendPacket(new UpdateChatBox(0xff, 0xff, 1, (short)rankr.Count(), rankr).Compile());
+                        }
+                    }
+                    else if (str2[0] == "@autohp")
+                    {
+                        if (!player.AutoHP)
+                            player.AutoHP = true;
+                        else
+                            player.AutoHP = false;
+
+                        if (str2.Count() > 1)
+                        {
+                            try
+                            {
+                                var temp = Convert.ToDouble(str2[1]);
+                                if (temp > 1) temp = 1;
+                                if (temp < 0) temp = 0;
+                                player.AutoHPP = temp;
+                            }
+                            catch { }
+                        }
+                    }
+                    else if (str2[0] == "@tele")
+                    {
+                        if (player.Name != "SIR" && player.Name != "PATHFINDER")
+                            return;
+                        if (str2.Count() == 2)
+                        {
+                            var teleon = handler.add.Where(xe => xe.Key.player != null && xe.Key.player.Name == str2[1]).FirstOrDefault().Key;
+                            if (teleon != null)
+                            {
+                                player.Loc = new Point2D(teleon.player.Loc.X, teleon.player.Loc.Y);
+                                player.Map = teleon.player.Map;
+                            }
+
+                        }
+                        else if (str2.Count() == 4)
+                        {
+                            player.Loc = new Point2D(Convert.ToInt16(str2[2]), Convert.ToInt16(str2[3]));
+                            player.Map = str2[1];
+                        }
+                    }
+                    else if (str2[0] == "@learn")
+                    {
+                        if (player.Name != "SIR" && player.Name != "PATHFINDER")
+                            return;
+                        try
+                        {
+                            string activatorstring = "LKCamelot.script.spells.";
+                            var tempspell = Activator.CreateInstance(Type.GetType(activatorstring + str2[1]));
+                            (tempspell as script.spells.Spell).Slot = player.GetFreeSpellSlot();
+                            (tempspell as script.spells.Spell).SLevel2 = 99;
+                            (tempspell as script.spells.Spell).Level = 12;
+                            player.m_MagicLearned.Add((tempspell as script.spells.Spell));
+                            SendPacket(new CreateSlotMagic2((tempspell as script.spells.Spell)).Compile());
+                        }
+                        catch { return; }
+                    }
+                    else if (str2[0] == "@invis")
+                    {
+                        if (player.Name != "SIR" && player.Name != "PATHFINDER")
+                            return;
+                        if (player.Transparancy == 0)
+                        {
+                            player.Transparancy = 100;
+                            World.SendToAll(new QueDele(player.Map, new SetObjectEffectsPlayer(player).Compile()));
+                        }
+                        else player.Transparancy = 0;
+                    }
+                    else if (str2[0] == "@remitee")
+                    {
+                        if (str2.Count() <= 2 || player.m_Map != "Loen")
+                            return;
+                        try
+                        {
+                            if (Convert.ToUInt32(str2[2]) < 0)
+                                return;
+                        }
+                        catch { return; }
+
+                        var tradep = handler.add.Where(xe => xe.Key != null && xe.Key.player != null && xe.Key.player.Name == str2[1].ToUpper() && xe.Key.player.Map == "Loen").FirstOrDefault().Key;
+                        if (tradep != null && tradep.player != null && tradep.player.Name != player.Name && player.Gold >= Convert.ToUInt32(str[2]))
+                        {
+                            player.Gold -= Convert.ToUInt32(str2[2]);
+                            tradep.player.Gold += Convert.ToUInt32(str2[2]);
+                        }
+                    }
+                    else if (str2[0] == "@cast")
+                    {
+                        /*   if (str2.Count() <= 7)
+                               return;
+
+                           int par;
+                           for (int x = 1; x < 9; x++)
+                           {
+                               if (int.TryParse(str2[x], out par) == false)
+                                   return;
+                           }
+
+                           World.SendToAll(new QueDele(player.Map, new CurveMagic(player.Serial, Convert.ToInt16(str2[1]), Convert.ToInt16(str2[2]), new script.spells.SpellSequence(Convert.ToInt32(str2[3]), Convert.ToInt32(str2[4]),
+                               Convert.ToInt32(str2[5]), Convert.ToInt32(str2[6]), Convert.ToInt32(str2[7]), Convert.ToInt32(str2[8]), Convert.ToInt32(str2[9]))).Compile()));
+                       */
+                    }
+                    else if (str2[0] == "@rank")
+                    {
+                        if (System.Environment.TickCount - ChatTimeout > LastAttack)
+                        {
+                            ChatTimeout = System.Environment.TickCount;
+                            string rankr = "Ranks: ";
+                            foreach (var rnk in handler.add.Keys)
+                            {
+                                rankr += rnk.player.Name + ", ";
+                            }
+                            rankr = rankr.Substring(0, rankr.Count() - 2);
+                            SendPacket(new UpdateChatBox(0xff, 0xff, 1, (short)rankr.Count(), rankr).Compile());
+                        }
+
+                        /*8          if (System.Environment.TickCount - ChatTimeout > LastAttack)
+                                  {
+                                      ChatTimeout = System.Environment.TickCount;
+                                      string rankr = "Highest Ranks: ";
+                                      foreach (var rnk in World.DBConnect.GetRank(this))
+                                      {
+                                          rankr += rnk.Name +", ";
+                                          rankr = rankr.Substring(0, rankr.Count()-2);
+                                          SendPacket(new UpdateChatBox(0xff, 0xff, 1, (short)rankr.Count(), rankr).Compile());
+                                      }
+                                  }*/
+                    }
+                    else if (str2[0] == "make" && str2[1] == "me" && str2[2] == "a")
+                    {
+                        var AronNpc = World.NewNpcs.Where(xe => xe.Value.Name == "Aron").FirstOrDefault();
+                        if (AronNpc.Value != null && World.Dist2d(player.X, player.Y, AronNpc.Value.X, AronNpc.Value.Y) < 7
+                            && player.Level >= 5 && player.Promo == 0)
+                        {
+                            switch (str2[3])
+                            {
+                                case "knight":
+                                    player.Class = LKCamelot.library.Class.Knight;
+                                    break;
+                                case "swordman":
+                                    player.Class = LKCamelot.library.Class.Swordsman;
+                                    break;
+                                case "wizard":
+                                    player.Class = LKCamelot.library.Class.Wizard;
+                                    break;
+                                case "shaman":
+                                    player.Class = LKCamelot.library.Class.Shaman;
+                                    break;
+                            }
+                        }
+                    }
+                    else if (str[0] == '/')
+                    {
+                        if (str2.Count() <= 1)
+                            return;
+                        var str3 = player.Name + "> " + str.Substring(str2[0].Count());
+
+                        var parsename = str2[0].ToString().Substring(1).ToUpper();
+                        var whisp = handler.add.Where(xe => xe.Key.player != null && xe.Key.player.Name == parsename).FirstOrDefault();
+                        if (whisp.Key != null && whisp.Key.player != null)
+                        {
+                            var str1 = whisp.Key.player.Name + "< " + str.Substring(str2[0].Count());
+                            SendPacket(new UpdateChatBox(0xff, 0x70, 1, (short)str1.Count(), str1).Compile());
+                            whisp.Key.player.client.SendPacket(new UpdateChatBox(0xff, 0x70, 1, (short)str3.Count(), str3).Compile());
+                        }
+                    }
+                    else
+                    {
+                        str = "[" + player.Name + "] : " + str;
+                        World.SendToAllRange(new QueDele(player.Map, new UpdateChatBox(0xff, 0xff, 1, (short)str.Count(), str).Compile()), player, 10);
+                    }
+                    break;
