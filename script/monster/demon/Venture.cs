@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -301,7 +301,7 @@ namespace LKCamelot.script.monster
         public override int Dam { get { return 650; } }
         public override int AC { get { return 385; } }
         public override int Hit { get { return 750; } }
-        public override int XP { get { return 150000; } }
+        public override int XP { get { return 45000; } } //150000
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
@@ -349,7 +349,7 @@ namespace LKCamelot.script.monster
         public override int Dam { get { return 750; } }
         public override int AC { get { return 445; } }
         public override int Hit { get { return 850; } }
-        public override int XP { get { return 210000; } }
+        public override int XP { get { return 70000; } } //210000
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
@@ -397,7 +397,7 @@ namespace LKCamelot.script.monster
         public override int Dam { get { return 600; } }
         public override int AC { get { return 360; } }
         public override int Hit { get { return 700; } }
-        public override int XP { get { return 120000; } }
+        public override int XP { get { return 40000; } } //120000
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
@@ -443,7 +443,7 @@ namespace LKCamelot.script.monster
         public override int Dam { get { return 850; } }
         public override int AC { get { return 470; } }
         public override int Hit { get { return 1100; } }
-        public override int XP { get { return 255000; } }
+        public override int XP { get { return 80000; } } //255000
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
@@ -492,7 +492,7 @@ namespace LKCamelot.script.monster
         public override int Dam { get { return 555; } }
         public override int AC { get { return 500; } }
         public override int Hit { get { return 3333; } }
-        public override int XP { get { return 300000; } }
+        public override int XP { get { return 90000; } } //300000
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
