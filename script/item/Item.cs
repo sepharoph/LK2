@@ -79,10 +79,10 @@ namespace LKCamelot.script.item
             string temp = "";
             temp += "\'" + Convert.ToInt32(m_Serial) + "\', ";
             temp += "\'" + this.ToString() + "\', ";
-            temp += "\'" + m_ItemID + "\', ";
-            temp += "\'" + Convert.ToInt32(ParSer) + "\', ";
-            temp += "\'" + InvSlot + "\', ";
-            temp += "\'" + Stage + "\', ";
+            temp += "\'" + m_ItemID + "\', ";//item ID tied to items
+            temp += "\'" + Convert.ToInt32(ParSer) + "\', ";//
+            temp += "\'" + InvSlot + "\', ";//calculating inventory slot max
+            temp += "\'" + Stage + "\', ";//this is upgraded item rank (savage,dreadful,etc..)
             temp += "\'" + Quantity + "\', ";
             temp = temp.Substring(0, (temp.Count() - 2));
             return temp;
@@ -368,7 +368,7 @@ namespace LKCamelot.script.item
 
         public virtual void Unequip(Player player, int slot)
         {
-            if (slot >= 25 && slot <= 30)
+            if (slot >= 26 && slot <= 30)//changed 25 to 26 so only 5 will be open not 6(seph)
             {
                 if (World.NewItems.Where(xe => xe.Value.m_Parent != null && xe.Value.m_Parent == player
                     && xe.Value.InvSlot == slot).FirstOrDefault().Value != null)
