@@ -307,7 +307,7 @@
                         catch { return; }
 
                         var tradep = handler.add.Where(xe => xe.Key != null && xe.Key.player != null && xe.Key.player.Name == str2[1].ToUpper() && xe.Key.player.Map == "Loen").FirstOrDefault().Key;
-                        if (tradep != null && tradep.player != null && tradep.player.Name != player.Name && player.Gold >= Convert.ToUInt32(str[2]))
+                        if (tradep != null && tradep.player != null && tradep.player.Name != player.Name && player.Gold >= Convert.ToUInt32(str2[2]))
                         {
                             player.Gold -= Convert.ToUInt32(str2[2]);
                             tradep.player.Gold += Convert.ToUInt32(str2[2]);
