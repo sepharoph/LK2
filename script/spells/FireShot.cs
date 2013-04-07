@@ -11,8 +11,8 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 13; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
-        public override int DamBase { get { return 360; } }
-        public override int DamPl { get { return 8; } }
+        public override int DamBase { get { return 300; } }
+        public override int DamPl { get { return 5; } }
         public override int ManaCost { get { return 180; } }
         public override int ManaCostPl { get { return 0; } }
 
