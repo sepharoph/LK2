@@ -9,7 +9,7 @@ namespace LKCamelot.script.monster
     public class RestDummy : Monster
     {
         public override string Name { get { return "Trainer"; }  }
-        public override int HP { get { return 30000; } }
+        public override int HP { get { return 3000000000; } }
         public override int Dam { get { return 0; } }
         public override int AC { get { return 25000; } }
         public override int Hit { get { return 0; } }
