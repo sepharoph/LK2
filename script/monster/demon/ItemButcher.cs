@@ -13,7 +13,7 @@ namespace LKCamelot.script.monster
         public override int Dam { get { return 185; } }
         public override int AC { get { return 108; } }
         public override int Hit { get { return 167; } }
-        public override int XP { get { return 1; } }
+        public override int XP { get { return 1107; } }//updated blue butcher x3
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 360000; } }
         public override Race Race { get { return Race.Demon; } }
