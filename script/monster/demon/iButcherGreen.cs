@@ -26,7 +26,16 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(.5, typeof(script.item.ExecutionBook), "10d12+150", 40, 1, 1),//added
+                    new LootPackEntry(.5, typeof(script.item.HealBook), "10d12+150", 40, 1, 1),//added
+                    new LootPackEntry(.5, typeof(script.item.MagicArmorBook), "10d12+150", 40, 1, 1),//added
+                    new LootPackEntry(.5, typeof(script.item.ZigZagBook), "10d12+150", 40, 1, 1),//added
+                    new LootPackEntry(.5, typeof(script.item.FireBallBook), "10d12+150", 40, 1, 1),//added
+                    new LootPackEntry(1, typeof(script.item.SquareShield), "10d12+150", 40, 1, 1),//added
+                    new LootPackEntry(1, typeof(script.item.Surplice), "10d12+150", 40, 1, 1),//added
+                    new LootPackEntry(1, typeof(script.item.Headgear), "10d12+150", 40, 1, 1),//added
+                    new LootPackEntry(1, typeof(script.item.SquareShield), "10d12+150", 40, 1, 1),//added
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d12+150", 40, 1, 1)
                 });
             }
         }
