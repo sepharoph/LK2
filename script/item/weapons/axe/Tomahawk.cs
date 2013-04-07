@@ -16,9 +16,9 @@ namespace LKCamelot.script.item
         public override int InitMinHits { get { return 700; } }
         public override int InitMaxHits { get { return 700; } }
         
-        public override int SellPrice { get { return 200000; } }
+        public override int SellPrice { get { return 200000; } }//sell value based on scaling
 
-        public override Class ClassReq { get { return Class.Knight } }
+        public override Class ClassReq { get { return Class.Knight } }// Only for Knights
         public override WeaponType WeaponType { get { return WeaponType.Axe; } }
 
         public Tomahawk()
