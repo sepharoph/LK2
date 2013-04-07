@@ -9,11 +9,11 @@ namespace LKCamelot.script.monster
     public class SkelGiant : Monster
     {
         public override string Name { get { return "Skel Giant"; } }
-        public override int HP { get { return 10000; } }
-        public override int Dam { get { return 2000; } }
-        public override int AC { get { return 1000; } }
-        public override int Hit { get { return 2500; } }
-        public override int XP { get { return 300000; } }
+        public override int HP { get { return 30000; } }//updated
+        public override int Dam { get { return 2500; } }//updated
+        public override int AC { get { return 5000; } }//updated
+        public override int Hit { get { return 5900; } }//updated
+        public override int XP { get { return 100000; } }//updated
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Undead; } }
@@ -24,7 +24,13 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d300+8550", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
         }
@@ -53,11 +59,11 @@ namespace LKCamelot.script.monster
     public class Gargoyle : Monster
     {
         public override string Name { get { return "Gargoyle"; } }
-        public override int HP { get { return 15000; } }
-        public override int Dam { get { return 1000; } }
-        public override int AC { get { return 1500; } }
-        public override int Hit { get { return 3000; } }
-        public override int XP { get { return 400000; } }
+        public override int HP { get { return 32500; } }//updated
+        public override int Dam { get { return 3250; } }//updated
+        public override int AC { get { return 4250; } }//updated
+        public override int Hit { get { return 5000; } }//updated
+        public override int XP { get { return 350000; } }//updated
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
@@ -68,7 +74,13 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d300+11550", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
         }
@@ -97,11 +109,11 @@ namespace LKCamelot.script.monster
     public class Ninja : Monster
     {
         public override string Name { get { return "Ninja"; } }
-        public override int HP { get { return 12000; } }
-        public override int Dam { get { return 1000; } }
-        public override int AC { get { return 3300; } }
-        public override int Hit { get { return 2500; } }
-        public override int XP { get { return 800000; } }
+        public override int HP { get { return 35000; } }//updated
+        public override int Dam { get { return 3500; } }//updated
+        public override int AC { get { return 4500; } }//updated
+        public override int Hit { get { return 5250; } }//updated
+        public override int XP { get { return 350000; } }//updated
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
@@ -112,7 +124,13 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d300+20550", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
         }
@@ -141,11 +159,11 @@ namespace LKCamelot.script.monster
     public class Necromancer : Monster
     {
         public override string Name { get { return "Necromancer"; } }
-        public override int HP { get { return 19000; } }
-        public override int Dam { get { return 1200; } }
-        public override int AC { get { return 3600; } }
-        public override int Hit { get { return 3200; } }
-        public override int XP { get { return 950000; } }
+        public override int HP { get { return 37500; } }//updated
+        public override int Dam { get { return 3750; } }//updated
+        public override int AC { get { return 4750; } }//updated
+        public override int Hit { get { return 5500; } }//updated
+        public override int XP { get { return 350000; } }//updated
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
@@ -156,7 +174,13 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d300+20550", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
         }
@@ -185,11 +209,11 @@ namespace LKCamelot.script.monster
     public class LoupGarou : Monster
     {
         public override string Name { get { return "Loup Garou"; } }
-        public override int HP { get { return 24000; } }
-        public override int Dam { get { return 1800; } }
-        public override int AC { get { return 3700; } }
-        public override int Hit { get { return 3500; } }
-        public override int XP { get { return 1050000; } }
+        public override int HP { get { return 40000; } }//updated
+        public override int Dam { get { return 4000; } }//updated
+        public override int AC { get { return 5000; } }//updated
+        public override int Hit { get { return 5750; } }//updated
+        public override int XP { get { return 350000; } }//updated
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Undead; } }
@@ -200,7 +224,13 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d300+15050", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
         }
@@ -229,11 +259,11 @@ namespace LKCamelot.script.monster
     public class GhostKnight : Monster
     {
         public override string Name { get { return "Ghost Knight"; } }
-        public override int HP { get { return 29000; } }
-        public override int Dam { get { return 3000; } }
-        public override int AC { get { return 5500; } }
-        public override int Hit { get { return 6000; } }
-        public override int XP { get { return 2000000; } }
+        public override int HP { get { return 42500; } }//updated
+        public override int Dam { get { return 4250; } }//updated
+        public override int AC { get { return 7000; } }//updated
+        public override int Hit { get { return 6000; } }//updated
+        public override int XP { get { return 666670; } }//updated
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
@@ -244,7 +274,13 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d230+22550", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
         }
@@ -273,11 +309,11 @@ namespace LKCamelot.script.monster
     public class DevilGuard : Monster
     {
         public override string Name { get { return "Devil Guard"; } }
-        public override int HP { get { return 15000; } }
-        public override int Dam { get { return 2000; } }
-        public override int AC { get { return 4000; } }
-        public override int Hit { get { return 4000; } }
-        public override int XP { get { return 500000; } }
+        public override int HP { get { return 45000; } }//updated
+        public override int Dam { get { return 4750; } }//updated
+        public override int AC { get { return 7250; } }//updated
+        public override int Hit { get { return 6250; } }//updated
+        public override int XP { get { return 666670; } }//updated
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
@@ -288,7 +324,13 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d3000+20550", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
         }
@@ -317,13 +359,13 @@ namespace LKCamelot.script.monster
     public class Devil : Monster
     {
         public override string Name { get { return "Devil"; } }
-        public override int HP { get { return 25000; } }
-        public override int Dam { get { return 3000; } }
-        public override int AC { get { return 7000; } }
-        public override int Hit { get { return 6000; } }
-        public override int XP { get { return 5000000; } }
+        public override int HP { get { return 50000; } }//updated
+        public override int Dam { get { return 5000; } }//updated
+        public override int AC { get { return 7500; } }//updated
+        public override int Hit { get { return 6500; } }//updated
+        public override int XP { get { return 666670; } }//updated
         public override int Color { get { return 0; } }
-        public override int SpawnTime { get { return 3000000; } }
+        public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
 
         public override LootPack Loot
@@ -332,8 +374,15 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.01, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    
+                    new LootPackEntry(0.01, typeof(script.item.HolyDefender), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.GrandeurPride), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
