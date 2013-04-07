@@ -10,7 +10,7 @@
         public override int DamPl { get { return 12; } }//compared to assassin special closed gap
         public override int ManaCost { get { return -77; } }
         public override int ManaCostPl { get { return 6; } }
-        public override int menCoff { get { return 10; } }
+        public override int menCoff { get { return 6; } }
         public override int Range
         {
             get
