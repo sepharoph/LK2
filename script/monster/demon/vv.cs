@@ -24,12 +24,19 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
+                    new LootPackEntry(0.0001, typeof(script.item.UnicornProtectoria), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.HolyDefender), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.GrandeurPride), "10d22+250", 40, 1, 1),
+                  // Best Armor  new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                //Best Armor    new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Excalibur), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.DaeungDaegum), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
@@ -74,12 +81,19 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
+                    new LootPackEntry(0.0001, typeof(script.item.UnicornProtectoria), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.HolyDefender), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.GrandeurPride), "10d22+250", 40, 1, 1),
+                  // Best Armor  new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                //Best Armor    new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Excalibur), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.DaeungDaegum), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
@@ -124,12 +138,19 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
+                    new LootPackEntry(0.0001, typeof(script.item.UnicornProtectoria), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.HolyDefender), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.GrandeurPride), "10d22+250", 40, 1, 1),
+                  // Best Armor  new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                //Best Armor    new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Excalibur), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.DaeungDaegum), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
@@ -174,12 +195,19 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
+                    new LootPackEntry(0.0001, typeof(script.item.UnicornProtectoria), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.HolyDefender), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.GrandeurPride), "10d22+250", 40, 1, 1),
+                  // Best Armor  new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                //Best Armor    new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Excalibur), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.DaeungDaegum), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
@@ -224,12 +252,19 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
+                    new LootPackEntry(0.0001, typeof(script.item.UnicornProtectoria), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.HolyDefender), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.GrandeurPride), "10d22+250", 40, 1, 1),
+                  // Best Armor  new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                //Best Armor    new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Excalibur), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.DaeungDaegum), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
@@ -274,12 +309,19 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
+                    new LootPackEntry(0.0001, typeof(script.item.UnicornProtectoria), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.HolyDefender), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.GrandeurPride), "10d22+250", 40, 1, 1),
+                  // Best Armor  new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                //Best Armor    new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Excalibur), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.DaeungDaegum), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
@@ -324,12 +366,19 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
+                    new LootPackEntry(0.0001, typeof(script.item.UnicornProtectoria), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.HolyDefender), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.GrandeurPride), "10d22+250", 40, 1, 1),
+                  // Best Armor  new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                //Best Armor    new LootPackEntry(0.0001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Excalibur), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.DaeungDaegum), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
                 });
             }
@@ -374,13 +423,17 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    
-                    new LootPackEntry(0.01, typeof(script.item.HolyDefender), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.GrandeurPride), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.UnicornProtectoria), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.HolyDefender), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.GrandeurPride), "10d22+250", 40, 1, 1),
+                  // Best Armor  new LootPackEntry(0.001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                //Best Armor    new LootPackEntry(0.001, typeof(script.item.), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.Excalibur), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.DaeungDaegum), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.Kassandra), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.TaegkFan), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.TomaHawk), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.GiantHammer), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.025, typeof(script.item.SRing), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.025, typeof(script.item.SAmulet), "10d22+250", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+55000", 40, 1, 1),
