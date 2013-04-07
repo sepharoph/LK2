@@ -30,6 +30,8 @@ namespace LKCamelot.script.monster
                     new LootPackEntry(.1, typeof(script.item.Cape), "10d22+250", 40, 1, 1),
                     new LootPackEntry(.1, typeof(script.item.IronSword), "10d22+250", 40, 1, 1),
                     new LootPackEntry(.5, typeof(script.item.Rapier), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(.5, typeof(script.item.ShortStaff), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(.5, typeof(script.item.ShortSpear), "15d10+225", 1, 1, 1),
                     new LootPackEntry(.5, typeof(script.item.ThunderCrossBook), "10d22+250", 40, 1, 1),
                     new LootPackEntry(.5, typeof(script.item.Saber), "10d22+250", 40, 1, 1),
                     new LootPackEntry(.5, typeof(script.item.FlameRoundBook), "10d22+250", 40, 1, 1),
