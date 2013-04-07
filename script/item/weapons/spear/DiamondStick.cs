@@ -16,7 +16,7 @@ namespace LKCamelot.script.item
         public override int DexReq { get { return 0; } }
         public override int LevelReq { get { return 220; } }//reflects item is for 6th promo
         
-        public override int ReduceCast { get { return 1100; } }
+        public override int ReduceCast { get { return 1100; } }//set to 11 dec time
         public override int InitMinHits { get { return 0; } }//Adds 0 HIT
         public override int InitMaxHits { get { return 0; } }//Adds 0 HIT
         public override int BuyPrice { get { return 5000; } }
