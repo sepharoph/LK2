@@ -11,6 +11,7 @@
         public override int ManaCost { get { return -77; } }
         public override int ManaCostPl { get { return 6; } }
         public override LKCamelot.library.Class ClassReq { get { return LKCamelot.library.Class.Wizard; } }
+        public override int menCoff { get { return 8; } }//compared to other class specific spells
         public override SpellSequence Seq
         {
             get
