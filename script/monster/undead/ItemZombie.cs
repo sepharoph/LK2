@@ -33,10 +33,10 @@ namespace LKCamelot.script.monster
                     new LootPackEntry(2, typeof(script.item.Cloak), "15d10+225", 1, 1, 1),
                     new LootPackEntry(2, typeof(script.item.Hanger), "15d10+225", 1, 1, 1),
                     new LootPackEntry(2, typeof(script.item.Mantle), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(2, typeof(script.item.Saver), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(2, typeof(script.item.Saber), "15d10+225", 1, 1, 1),
                     new LootPackEntry(2, typeof(script.item.Simitar), "15d10+225", 1, 1, 1),
                     new LootPackEntry(25.0, typeof(script.item.Gold), "5d10+1200", 40, 1, 1),
-                    // shouldn't drop book of trace , (Saver should = Saber)
+                    // shouldn't drop book of trace ,
                     // should drop Book of Comeback
                 });
             }
