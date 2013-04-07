@@ -24,15 +24,19 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(1.22, typeof(script.item.FireHawkBook), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(2.1, typeof(script.item.FireShotBook), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(2.1, typeof(script.item.ExecutionBook), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(2.2, typeof(script.item.BattleArmor), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(2.2, typeof(script.item.LargeAxe), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(2.2, typeof(script.item.FullHelmet), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(2.0, typeof(script.item.Claymore), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(2.0, typeof(script.item.ThunderCrossBook), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+550", 40, 1, 1),
+                    new LootPackEntry(1, typeof(script.item.AssassinBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(1, typeof(script.item.FireHawkBook), "15d10+225", 1, 1, 1),
+                // new LootPackEntry(2 typeof(script.item.FreezingBook), "10d22+250", 40, 1, 1),
+                // new LootPackEntry(2, typeof(script.item.StoneCurseBook), "10d22+250", 40, 1, 1),
+
+                    new LootPackEntry(1.5, typeof(script.item.WarStaff), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(1.5, typeof(script.item.Javelin), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(2, typeof(script.item.FullHelmet), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(2, typeof(script.item.ToughLeather), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(2, typeof(script.item.BreastPlate), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(2, typeof(script.item.BattleAxe), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(2, typeof(script.item.GrandShield), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(25.0, typeof(script.item.Gold), "10d20+4200", 40, 1, 1),
                 });
             }
         }
