@@ -626,14 +626,14 @@ namespace LKCamelot.model
                     while ((tempmob = Map.SpawnPointFixed(mapn, 0, 0, 79, 199)) == null) ;
                     World.NewMonsters.Add(temps, new script.monster.Cyclops(temps++, tempmob.X, tempmob.Y, mapn));
                 }
-                for (int x = 0; x < 30; x++)
+                for (int x = 0; x < 60; x++)
                 {
                     Point2D tempmob = null; string mapn = "Miro1";
                     while ((tempmob = Map.SpawnPointFixed(mapn, 0, 0, 79, 199)) == null) ;
                     World.NewMonsters.Add(temps, new script.monster.OneEye(temps++, tempmob.X, tempmob.Y, mapn));
                 }
 
-                for (int x = 0; x < 15; x++)
+                for (int x = 0; x < 50; x++)
                 {
                     Point2D tempmob = null; string mapn = "Golem";
                     while ((tempmob = Map.SpawnPointFixed(mapn, 0, 0, 49, 49)) == null) ;
