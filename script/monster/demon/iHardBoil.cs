@@ -24,11 +24,18 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.2, typeof(script.item.FlameRoundBook), "15d10+225", 1, 1, 1),
-               //     new LootPackEntry(1.0, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Saw), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Buckler), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "5d10+80", 40, 1, 1),
+                    new LootPackEntry(0.019, typeof(script.item.UltraBigBangBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.MagmaHandBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.ThunderStormBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.RevelationBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.BigBangBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.DeadlyBoomBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.RevelationBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.FullPlate), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.GreatSword), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.WidePlate), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.GreatMaul), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+550", 40, 1, 1),
                 });
             }
         }
@@ -72,11 +79,18 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.2, typeof(script.item.FlameRoundBook), "15d10+225", 1, 1, 1),
-               //     new LootPackEntry(1.0, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Saw), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Buckler), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "5d10+80", 40, 1, 1),
+                    new LootPackEntry(0.019, typeof(script.item.UltraBigBangBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.MagmaHandBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.ThunderStormBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.RevelationBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.BigBangBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.DeadlyBoomBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.RevelationBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.FullPlate), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.GreatSword), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.WidePlate), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.GreatMaul), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+550", 40, 1, 1),
                 });
             }
         }
@@ -120,11 +134,18 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.2, typeof(script.item.FlameRoundBook), "15d10+225", 1, 1, 1),
-               //     new LootPackEntry(1.0, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Saw), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Buckler), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "5d10+80", 40, 1, 1),
+                    new LootPackEntry(0.019, typeof(script.item.UltraBigBangBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.MagmaHandBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.ThunderStormBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.RevelationBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.BigBangBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.DeadlyBoomBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.RevelationBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.FullPlate), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.GreatSword), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.WidePlate), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.GreatMaul), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+550", 40, 1, 1),
                 });
             }
         }
@@ -168,11 +189,18 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.2, typeof(script.item.FlameRoundBook), "15d10+225", 1, 1, 1),
-               //     new LootPackEntry(1.0, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Saw), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Buckler), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "5d10+80", 40, 1, 1),
+                    new LootPackEntry(0.019, typeof(script.item.UltraBigBangBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.MagmaHandBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.ThunderStormBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.RevelationBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.BigBangBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.DeadlyBoomBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.RevelationBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.FullPlate), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.GreatSword), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.WidePlate), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.GreatMaul), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+550", 40, 1, 1),
                 });
             }
         }
