@@ -8,14 +8,15 @@ namespace LKCamelot.script.item
         public override string Name { get { return "Long Spear"; } }
 
         public override int DamBase { get { return 88; } }
-        public override int ACBase { get { return 45; } }
+        public override int ACBase { get { return 55; } }
 
         public override int StrReq { get { return 70; } }
         public override int MenReq { get { return 165; } }
         public override int DexReq { get { return 106; } }
-        public override int ReduceCast { get { return 300; } }
-        public override int InitMinHits { get { return 80; } }
-        public override int InitMaxHits { get { return 80; } }
+        
+        public override int ReduceCast { get { return 700; } }
+        public override int InitMinHits { get { return 63; } }//adds 63 HIT
+        public override int InitMaxHits { get { return 63; } }//adds 63 HIT
         public override int BuyPrice { get { return 5000; } }
 
         public override Class ClassReq { get { return Class.Shaman; } }
