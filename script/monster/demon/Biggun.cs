@@ -24,14 +24,20 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.01, typeof(script.item.GoldPlate), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.DarkMail), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.Protectoria), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.PythonScale), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.05, typeof(script.item.ThunderStormBook), "5d500+8000", 40, 1, 1),
-                    new LootPackEntry(0.05, typeof(script.item.BigBangBook), "5d500+8000", 40, 1, 1),
-                    new LootPackEntry(0.05, typeof(script.item.AssassinBook), "5d500+8000", 40, 1, 1),
-                    new LootPackEntry(20.0, typeof(script.item.Gold), "5d500+8000", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Wand), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.WarPike), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.009, typeof(script.item.WarStaf), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.009, typeof(script.item.Javelin), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.GoldPlate), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.DarkMail), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.Protectoria), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.PythonScale), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.BraveRing), "5d500+8000", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.ThunderStormBook), "5d500+8000", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.BigBangBook), "5d500+8000", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.AssassinBook), "5d500+8000", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.RevelationBook), "5d500+8000", 40, 1, 1),
+                    new LootPackEntry(20.0, typeof(script.item.Gold), "10d20+3000", 40, 1, 1),
                 });
             }
         }
@@ -75,15 +81,20 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {  
-                    new LootPackEntry(0.01, typeof(script.item.GoldPlate), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.DarkMail), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.Protectoria), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.PythonScale), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.03, typeof(script.item.BraveRing), "5d500+8000", 40, 1, 1),
-                    new LootPackEntry(0.05, typeof(script.item.ThunderStormBook), "5d500+8000", 40, 1, 1),
-                    new LootPackEntry(0.05, typeof(script.item.BigBangBook), "5d500+8000", 40, 1, 1),
-                    new LootPackEntry(0.05, typeof(script.item.AssassinBook), "5d500+8000", 40, 1, 1),
-                    new LootPackEntry(20.0, typeof(script.item.Gold), "5d500+11000", 40, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.Wand), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.001, typeof(script.item.WarPike), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.009, typeof(script.item.WarStaf), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.009, typeof(script.item.Javelin), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.GoldPlate), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.DarkMail), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.Protectoria), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.PythonScale), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.BraveRing), "5d500+8000", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.ThunderStormBook), "5d500+8000", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.BigBangBook), "5d500+8000", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.AssassinBook), "5d500+8000", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.RevelationBook), "5d500+8000", 40, 1, 1),
+                    new LootPackEntry(20.0, typeof(script.item.Gold), "10d20+3500", 40, 1, 1),
                 });
             }
         }
