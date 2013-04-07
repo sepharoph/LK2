@@ -10,7 +10,7 @@
         public override int DamPl { get { return 11; } }
         public override int ManaCost { get { return -65; } }
         public override int ManaCostPl { get { return 5; } }
-        public override int menCoff { get { return 9; } }//compared to grand big bang
+        public override int menCoff { get { return 8; } }//compared to grand big bang
         public override int Range
         {
             get
