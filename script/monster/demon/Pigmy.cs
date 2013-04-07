@@ -26,10 +26,12 @@ namespace LKCamelot.script.monster
                 {
                     
                     new LootPackEntry(0.1, typeof(script.item.FlameRoundBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.4, typeof(script.item.Hatchet), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(3.5, typeof(script.item.ExecutionBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(3.5, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
-              //      new LootPackEntry(4.5, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(1.0, typeof(script.item.Hatchet), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(1.0, typeof(script.item.ExecutionBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(1.0, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(5.0, typeof(script.item.Hood), "15d10+225", 1, 1, 1),//added
+                    new LootPackEntry(5.0, typeof(script.item.Buckler), "15d10+225", 1, 1, 1),//added
+                    new LootPackEntry(5.0, typeof(script.item.Rag), "15d10+225", 1, 1, 1),//added
                     new LootPackEntry(15.0, typeof(script.item.Gold), "5d10+50", 40, 1, 1),
                 } );
             }
