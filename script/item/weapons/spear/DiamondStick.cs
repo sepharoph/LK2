@@ -9,7 +9,8 @@ namespace LKCamelot.script.item
 
         public override int DamBase { get { return 180; } }
         public override int ACBase { get { return 110; } }
-
+        public override int InitMaxMana { get { return 189; } }// add max mana plz approve!!
+        
         public override int StrReq { get { return 220; } }
         public override int MenReq { get { return 525; } }
         public override int DexReq { get { return 0; } }
