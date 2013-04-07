@@ -28,8 +28,6 @@ namespace LKCamelot.script.monster
                     new LootPackEntry(0.02, typeof(script.item.AssassinBook), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.1, typeof(script.item.FireShotBook), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.1, typeof(script.item.ExecutionBook), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.ExecutionBook), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.ExecutionBook), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.2, typeof(script.item.EnamelLeather), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.2, typeof(script.item.CoatingShield), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.2, typeof(script.item.BroadAxe), "10d22+250", 40, 1, 1),
