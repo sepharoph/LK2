@@ -26,12 +26,21 @@ namespace LKCamelot.script.monster
                 return new LootPack(new LootPackEntry[]
                 {
                     new LootPackEntry(0.1, typeof(script.item.BraveRing), "15d10+225", 1, 1, 1),
-
-                    new LootPackEntry(1, typeof(script.item.FlyingSwordBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.GrandeurHelmet), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.BraveAmulet), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(1, typeof(script.item.UltraBigBangBook), "15d10+225", 1, 1, 1),
                     new LootPackEntry(1, typeof(script.item.MagmaHandBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1, typeof(script.item.GrandeurHelmet), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(1, typeof(script.item.Wand), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(1, typeof(script.item.WarPike), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(2, typeof(script.item.RevelationBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(5, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(1, typeof(script.item.CoreaSword), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(1, typeof(script.item.WidePlate), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(1, typeof(script.item.SamuraiPlate), "15d10+225", 1, 1, 1),
                     new LootPackEntry(1, typeof(script.item.FullPlate), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1, typeof(script.item.GrandeurHelmet), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(3, typeof(script.item.DeadlyBoomBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(3, typeof(script.item.AssassinBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(2, typeof(script.item.BigBangBook), "15d10+225", 1, 1, 1),
                     new LootPackEntry(25.0, typeof(script.item.Gold), "10d20+3200", 40, 1, 1),
                 });
             }
