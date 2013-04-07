@@ -9,6 +9,7 @@ namespace LKCamelot.script.item
 
         public override int DamBase { get { return 0; } }
         public override int ACBase { get { return 75; } }
+        public override int InitMaxDex { get { return 25; } }//adds 25Dex
 
         public override int StrReq { get { return 0; } }
         public override int DexReq { get { return 0; } }
