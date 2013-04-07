@@ -25,8 +25,11 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.02, typeof(script.item.FireHawkBook), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.FireShotBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.UltraBigBangBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.MagmaHandBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.ThunderStormBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.RevelationBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.BigBangBook), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.1, typeof(script.item.FlyingSwordBook), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.2, typeof(script.item.MailPlate), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.2, typeof(script.item.Halberd), "10d22+250", 40, 1, 1),
@@ -38,7 +41,7 @@ namespace LKCamelot.script.monster
                     new LootPackEntry(0.2, typeof(script.item.GreatAxe), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.2, typeof(script.item.GreatMaul), "10d22+250", 40, 1, 1),
                     new LootPackEntry(0.2, typeof(script.item.FullPlate), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "25d30+15550", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+5550", 40, 1, 1),
                 });
             }
         }
