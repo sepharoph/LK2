@@ -8,7 +8,7 @@ namespace LKCamelot.script.item
         public override string Name { get { return "S-RING"; } }
 
         public override int DamBase { get { return 0; } }
-        public override int ACBase { get { return 150; } }
+        public override int ACBase { get { return 150; } }//
 
         public override int StrReq { get { return 0; } }
         public override int DexReq { get { return 0; } }
