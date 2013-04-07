@@ -12,6 +12,7 @@
         public override int ManaCostPl { get { return 6; } }//updated
         public override int RecastTime { get { return 2000; } }//updated
         public override int strCoff { get { return 2; } }//attempted this line
+        public override int Range { get { return 1; } }
         public override LKCamelot.library.Class ClassReq { get { return LKCamelot.library.Class.Knight; } }
         public override SpellSequence Seq
         {
