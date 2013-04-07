@@ -6,7 +6,7 @@
         public override int SpellLearnedIcon { get { return 23; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target; } }
 
-        public override int DamBase { get { return 536; } }
+        public override int DamBase { get { return 636; } }//compared to other spells
         public override int DamPl { get { return 14; } }
         public override int ManaCost { get { return -78; } }
         public override int ManaCostPl { get { return 6; } }
