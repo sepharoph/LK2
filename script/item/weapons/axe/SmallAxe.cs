@@ -12,6 +12,7 @@ namespace LKCamelot.script.item
 
 		public override int StrReq { get { return 74; } }
 		public override int DexReq { get { return 0; } }
+		public override int LevelReq { get { return 7; } }
 
 		public override int InitMinHits { get { return 200; } }
 		public override int InitMaxHits { get { return 200; } }
