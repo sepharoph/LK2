@@ -24,7 +24,17 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
+                    new LootPackEntry(0.0001, typeof(script.item.WariorAngel), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.DiamondStick), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.Calypso), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.GeneralSword), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TitanMace), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.RocketMaul), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.StormShield), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.DiamondArmor), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.GoliathPlate), "15d10+225", 1, 1, 1),
                     new LootPackEntry(0.05, typeof(script.item.GrandStaff), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.GrandShield), "15d10+225", 1, 1, 1),
                     new LootPackEntry(0.05, typeof(script.item.GreatLance), "15d10+225", 1, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "5d100+7000", 40, 1, 1),
                 });
@@ -70,10 +80,19 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
+                    new LootPackEntry(0.0001, typeof(script.item.WariorAngel), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.DiamondStick), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.0001, typeof(script.item.Calypso), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.GeneralSword), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.TitanMace), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.RocketMaul), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.StormShield), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.DiamondArmor), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.GoliathPlate), "15d10+225", 1, 1, 1),
                     new LootPackEntry(0.05, typeof(script.item.GrandStaff), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.GrandShield), "15d10+225", 1, 1, 1),
                     new LootPackEntry(0.05, typeof(script.item.GreatLance), "15d10+225", 1, 1, 1),
-               //     new LootPackEntry(1.0, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "5d100+10000", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "5d100+7000", 40, 1, 1),
                 });
             }
         }
