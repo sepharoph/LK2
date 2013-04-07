@@ -37,11 +37,11 @@ namespace LKCamelot.script.item
     public class ThunderStormBook : BaseSpellbook
     {
         public override string Name { get { return "BOOK OF THUNDER STORM"; } }
-        public override int MenReq { get { return 485; } }
+        public override int MenReq { get { return 285; } }// lower requirement for spell to 285
         public override int MenReqPl { get { return 11; } }
         public override Class ClassReq { get { return Class.Wizard; } }
 
-        public override int BuyPrice { get { return 1000; } }
+        public override int SellPrice { get { return 10000; } }// changed sell price to 10k
 
         public override spells.Spell SpellTaught { get { return new spells.ThunderStorm(); } }
 
@@ -68,6 +68,7 @@ namespace LKCamelot.script.item
         public override Class ClassReq { get { return 0; } }
 
         public override int BuyPrice { get { return 1000; } }
+        public override int SellPrice { get { return 500; } }//sells for 500
 
         public override spells.Spell SpellTaught { get { return new spells.ElectronicBall(); } }
 
@@ -92,11 +93,40 @@ namespace LKCamelot.script.item
         public override int LevelReqPl { get { return 5; } }
         public override Class ClassReq { get { return Class.Shaman; } }
 
-        public override int BuyPrice { get { return 1000; } }
+        public override int SellPrice { get { return 1000000; } }// changed sell price to 1m
 
         public override spells.Spell SpellTaught { get { return new spells.WindySpirit(); } }
 
         public WindySpiritBook()
+            : base(3)
+        {
+        }
+
+        public WindySpiritBook(Serial serial)
+            : base(serial)
+        {
+            m_ItemID = 3;
+        }
+    }
+/* Added in below Book of Flame Strike, Copied formula for Windy Sprirt changed to STR REQ*/
+    public class FlameStrikeBook : BaseSpellbook
+    {
+        public override string Name { get { return "BOOK OF FLAME STRIKE"; } }
+        public override int StrReq { get {return 1000; } }
+        public override int StrReqPl { get { return 300; } }
+        public override int MenReq { get { return 0; } }
+        public override int MenReqPl { get { return 0; } }
+        public override int DexReq { get { return 0; } }
+        public override int DexReqPl { get { return 0; } }
+        public override int LevelReq { get { return 135; } }
+        public override int LevelReqPl { get { return 5; } }
+        public override Class ClassReq { get { return Class.Knight; } }
+
+        public override int SellPrice { get { return 1000000; } }//set sellprice to 1m
+
+        public override spells.Spell SpellTaught { get { return new spells.FlameStrike(); } }
+
+        public FlameStrikeBook()
             : base(3)
         {
         }
@@ -119,7 +149,7 @@ namespace LKCamelot.script.item
         public override int LevelReqPl { get { return 5; } }
         public override Class ClassReq { get { return Class.Wizard; } }
 
-        public override int BuyPrice { get { return 1000; } }
+        public override int SellPrice { get { return 1000000; } }//changed sell price to 1m
 
         public override spells.Spell SpellTaught { get { return new spells.CurveShock(); } }
 
@@ -141,11 +171,13 @@ namespace LKCamelot.script.item
         public override int MenReq { get { return 0; } }
         public override int MenReqPl { get { return 00; } }
         public override int StrReq { get { return 300; } }
-        public override int DexReqPl { get { return 15; } }
-        public override int LevelReq { get { return 80; } }
+        public override int StrReqPl { get { return 15; } }//added str pl 15
+        public override int DexReq { get { return 75; } }//added dex req 75
+        public override int DexReqPl { get { return 10; } }//added dex pl 10
+        public override int LevelReq { get { return 75; } }//changed level req to 75
         public override int LevelReqPl { get { return 5; } }
-
-        public override int BuyPrice { get { return 1000; } }
+        
+        public override int SellPrice { get { return 10000; } }//changed sell price to 10,000
 
         public override spells.Spell SpellTaught { get { return new spells.Twister(); } }
         public override Class ClassReq { get { return Class.Knight; } }
@@ -167,10 +199,12 @@ namespace LKCamelot.script.item
         public override int MenReqPl { get { return 00; } }
         public override int DexReq { get { return 300; } }
         public override int DexReqPl { get { return 15; } }
-        public override int LevelReq { get { return 80; } }
+        public override int StrReq { get { return 75; } }//added Str req 75
+        public override int StrReqPl { get { return 10; } }//added Str pl 10
+        public override int LevelReq { get { return 75; } }//changed level req to 75
         public override int LevelReqPl { get { return 5; } }
 
-        public override int BuyPrice { get { return 1000; } }
+        public override int SellPrice { get { return 10000; } }//changed sell price to 10.000
 
         public override spells.Spell SpellTaught { get { return new spells.Triple(); } }
         public override Class ClassReq { get { return Class.Swordsman; } }
@@ -194,7 +228,8 @@ namespace LKCamelot.script.item
         public override int DexReqPl { get { return 4; } }
         public override int LevelReq { get { return 0; } }
 
-        public override int BuyPrice { get { return 1000; } }
+        public override int BuyPrice { get { return 25000; } }
+        public override int SellPrice { get { return 12500; } }//sells for 12.500
 
         public override spells.Spell SpellTaught { get { return new spells.Teleport(); } }
 
@@ -220,6 +255,7 @@ namespace LKCamelot.script.item
         public override Class ClassReq { get { return Class.Swordsman | Class.Shaman; } }
 
         public override int BuyPrice { get { return 30000; } }
+        public override int SellPrice { get { return 15000; } }//sells for 5,000
 
         public override spells.Spell SpellTaught { get { return new spells.Sidewinder(); } }
 
@@ -237,14 +273,15 @@ namespace LKCamelot.script.item
     public class AssassinSpecialBook : BaseSpellbook
     {
         public override string Name { get { return "BOOK OF ASSASSIN SPECIAL"; } }
-        public override int MenReq { get { return 600; } }
-        public override int MenReqPl { get { return 16; } }
-        public override int DexReq { get { return 92; } }
-        public override int DexReqPl { get { return 4; } }
-        public override int LevelReq { get { return 0; } }
+        public override int MenReq { get { return 800; } }//updated to 800 req
+        public override int MenReqPl { get { return 50; } }// updated to 50 more per lvl
+        public override int DexReq { get { return 200; } }//updated to 200 dex req
+        public override int DexReqPl { get { return 25; } }//updated to 25 dex per lvl
+        public override int LevelReq { get { return 115; } }//updated to 115 level req
+        public override int LevelReqPl { get { return 5; } }//updated to 5 level pl
         public override Class ClassReq { get { return Class.Shaman; } }
 
-        public override int BuyPrice { get { return 1000; } }
+        public override int SellPrice { get { return 100000; } }//sell price 100,000
 
         public override spells.Spell SpellTaught { get { return new spells.AssassinSpecial(); } }
 
@@ -269,6 +306,7 @@ namespace LKCamelot.script.item
         public override int LevelReq { get { return 0; } }
 
         public override int BuyPrice { get { return 1000; } }
+        public override int SellPrice { get { return 500; } }//sells for 500
 
         public override spells.Spell SpellTaught { get { return new spells.FireBall(); } }
 
@@ -291,6 +329,8 @@ namespace LKCamelot.script.item
         public override int DexReqPl { get { return 0; } }
         public override int LevelReq { get { return 0; } }
 
+        public override int SellPrice { get { return 5000; } }//sells for 5,000
+        
         public override spells.Spell SpellTaught { get { return new spells.FlameRound(); } }
 
         public FlameRoundBook()
@@ -311,6 +351,8 @@ namespace LKCamelot.script.item
         public override int DexReq { get { return 0; } }
         public override int DexReqPl { get { return 0; } }
         public override int LevelReq { get { return 0; } }
+        
+        public override int SellPrice { get { return 7500; } }//sells for 7.500
 
         public override spells.Spell SpellTaught { get { return new spells.ThunderCross(); } }
 
@@ -328,11 +370,14 @@ namespace LKCamelot.script.item
     public class GrandBigBangBook : BaseSpellbook
     {
         public override string Name { get { return "BOOK OF GRAND BIG BANG"; } }
-        public override int MenReq { get { return 435; } }
-        public override int MenReqPl { get { return 10; } }
-        public override int DexReq { get { return 234; } }
-        public override int DexReqPl { get { return 7; } }
-        public override int LevelReq { get { return 0; } }
+        public override int MenReq { get { return 800; } }//updated to 800 req
+        public override int MenReqPl { get { return 50; } }// updated to 50 more per lvl
+        public override int DexReq { get { return 200; } }//updated to 200 dex req
+        public override int DexReqPl { get { return 25; } }//updated to 25 dex per lvl
+        public override int LevelReq { get { return 115; } }//updated to 115 level req
+        public override int LevelReqPl { get { return 5; } }//updated to 5 level pl
+
+        public override int SellPrice { get { return 100000; } }//sells for 100,000
 
         public override spells.Spell SpellTaught { get { return new spells.GrandBigBang(); } }
         public override Class ClassReq { get { return Class.Wizard; } }
@@ -350,11 +395,12 @@ namespace LKCamelot.script.item
     public class BigBangBook : BaseSpellbook
     {
         public override string Name { get { return "BOOK OF BIG BANG"; } }
-        public override int MenReq { get { return 435; } }
-        public override int MenReqPl { get { return 10; } }
-        public override int DexReq { get { return 234; } }
-        public override int DexReqPl { get { return 7; } }
-        public override int LevelReq { get { return 0; } }
+        public override int MenReq { get { return 245; } }
+        public override int MenReqPl { get { return 15; } }
+        public override int DexReq { get { return 100; } }
+        public override int DexReqPl { get { return 5; } }
+        public override int LevelReq { get { return 50; } }
+        public override int LevelReqPl { get { return 2; } }
 
         public override spells.Spell SpellTaught { get { return new spells.BigBang(); } }
         public override Class ClassReq { get { return Class.Wizard; } }
@@ -372,11 +418,15 @@ namespace LKCamelot.script.item
     public class UltraBigBangBook : BaseSpellbook
     {
         public override string Name { get { return "BOOK OF ULTRA BIG BANG"; } }
-        public override int MenReq { get { return 835; } }
-        public override int MenReqPl { get { return 40; } }
-        public override int DexReq { get { return 234; } }
-        public override int DexReqPl { get { return 7; } }
+        public override int MenReq { get { return 480; } }
+        public override int MenReqPl { get { return 20; } }
+        public override int DexReq { get { return 195; } }
+        public override int DexReqPl { get { return 5; } }
         public override int LevelReq { get { return 80; } }
+        public override int LevelReqPl { get { return 2; } }
+        
+        
+        public override int SellPrice { get { return 75000; } }
 
         public override spells.Spell SpellTaught { get { return new spells.UltraBigBang(); } }
         public override Class ClassReq { get { return Class.Wizard; } }
@@ -399,6 +449,8 @@ namespace LKCamelot.script.item
         public override int DexReq { get { return 234; } }
         public override int DexReqPl { get { return 7; } }
         public override int LevelReq { get { return 0; } }
+        
+        public override int SellPrice { get { return 75000; } }
 
         public override spells.Spell SpellTaught { get { return new spells.Assassin(); } }
         public override Class ClassReq { get { return Class.Shaman; } }
@@ -423,6 +475,7 @@ namespace LKCamelot.script.item
         public override int LevelReq { get { return 0; } }
 
         public override int BuyPrice { get { return 4000; } }
+        public override int SellPrice { get { return 15000; } }
 
         public override spells.Spell SpellTaught { get { return new spells.Trace(); } }
 
@@ -448,6 +501,7 @@ namespace LKCamelot.script.item
         public override int LevelReq { get { return 0; } }
         public override Class ClassReq { get { return Class.Shaman;}}
         public override int BuyPrice { get { return 4000; } }
+        public override int SellPrice { get { return 25000; } }
 
         public override spells.Spell SpellTaught { get { return new spells.Revelation(); } }
 
@@ -473,6 +527,7 @@ namespace LKCamelot.script.item
         public override int LevelReq { get { return 0; } }
 
         public override int BuyPrice { get { return 4000; } }
+        public override int SellPrice { get { return 50000; } }
 
         public override spells.Spell SpellTaught { get { return new spells.MagmaHand(); } }
 
@@ -498,6 +553,7 @@ namespace LKCamelot.script.item
         public override int LevelReq { get { return 0; } }
 
         public override int BuyPrice { get { return 4000; } }
+        public override int SellPrice { get { return 2000; } }//updated to reflect sale to loen -50% gold spent
 
         public override spells.Spell SpellTaught { get { return new spells.Heal(); } }
 
@@ -522,6 +578,7 @@ namespace LKCamelot.script.item
         public override int LevelReq { get { return 0; } }
 
         public override int BuyPrice { get { return 5000; } }
+        public override int SellPrice { get { return 2500; } }//updated to reflect sale to loen -50% gold spent
 
         public override spells.Spell SpellTaught { get { return new spells.PlusHeal(); } }
 
@@ -547,6 +604,7 @@ namespace LKCamelot.script.item
         public override Class ClassReq { get { return Class.Knight; } }
 
         public override int BuyPrice { get { return 5000; } }
+        public override int SellPrice { get { return 2500; } }//updated to reflect sale to loen -50% gold spent
 
         public override spells.Spell SpellTaught { get { return new spells.MagicArmor(); } }
 
@@ -571,6 +629,7 @@ namespace LKCamelot.script.item
         public override Class ClassReq { get { return Class.Knight; } }
 
         public override int BuyPrice { get { return 15000; } }
+        public override int SellPrice { get { return 7500; } }//updated to reflect sale to loen -50% gold spent
 
         public override spells.Spell SpellTaught { get { return new spells.MentalSword(); } }
 
@@ -595,6 +654,7 @@ namespace LKCamelot.script.item
         public override Class ClassReq { get { return Class.Wizard; } }
 
         public override int BuyPrice { get { return 50000; } }
+        public override int SellPrice { get { return 25000; } }//updated to reflect sale to loen -50% gold spent
 
         public override spells.Spell SpellTaught { get { return new spells.RainbowArmor(); } }
 
@@ -619,6 +679,7 @@ namespace LKCamelot.script.item
         public override Class ClassReq { get { return Class.Swordsman; } }
 
         public override int BuyPrice { get { return 5000; } }
+        public override int SellPrice { get { return 2500; } }//updated to reflect sale to loen -50% gold spent
 
         public override spells.Spell SpellTaught { get { return new spells.GuardianSword(); } }
 
@@ -643,6 +704,7 @@ namespace LKCamelot.script.item
         public override Class ClassReq { get { return Class.Shaman; } }
 
         public override int BuyPrice { get { return 10000; } }
+        public override int SellPrice { get { return 5000; } }//updated to reflect sale to loen -50% gold spent
 
         public override spells.Spell SpellTaught { get { return new spells.FireProtector(); } }
 
@@ -667,6 +729,7 @@ namespace LKCamelot.script.item
         public override Class ClassReq { get { return Class.Shaman; } }
 
         public override int BuyPrice { get { return 10000; } }
+        public override int SellPrice { get { return 5000; } }//updated to reflect sale to loen -50% gold spent
 
         public override spells.Spell SpellTaught { get { return new spells.TeagueShield(); } }
 
@@ -691,6 +754,7 @@ namespace LKCamelot.script.item
         public override Class ClassReq { get { return Class.Wizard; } }
 
         public override int BuyPrice { get { return 10000; } }
+        public override int SellPrice { get { return 5000; } }//updated to reflect sale to loen -50% gold spent
 
         public override spells.Spell SpellTaught { get { return new spells.MagicShield(); } }
 
@@ -715,6 +779,7 @@ namespace LKCamelot.script.item
         public override Class ClassReq { get { return 0; } }
 
         public override int BuyPrice { get { return 800; } }
+        public override int SellPrice { get { return 400; } }//updated to reflect sale to loen -50% gold spent
 
         public override spells.Spell SpellTaught { get { return new spells.ZigZag(); } }
 
@@ -738,6 +803,8 @@ namespace LKCamelot.script.item
         public override int LevelReq { get { return 0; } }
         public override Class ClassReq { get { return Class.Wizard; } }
 
+        public override int SellPrice { get { return 20000; } }
+        
         public override spells.Spell SpellTaught { get { return new spells.FireHawk(); } }
 
         public FireHawkBook()
@@ -785,6 +852,8 @@ namespace LKCamelot.script.item
         public override int DexReqPl { get { return 0; } }
         public override int LevelReq { get { return 0; } }
         public override Class ClassReq { get { return 0; } }
+        
+        public override int SellPrice { get { return 15000; } }//updated sell price to 15,000
 
         public override spells.Spell SpellTaught { get { return new spells.FireShot(); } }
 
@@ -807,6 +876,9 @@ namespace LKCamelot.script.item
         public override int DexReq { get { return 0; } }
         public override int DexReqPl { get { return 0; } }
         public override int LevelReq { get { return 0; } }
+        
+        public override int SellPrice { get { return 25000; } }
+                
         public override Class ClassReq { get { return Class.Wizard; } }
 
         public override spells.Spell SpellTaught { get { return new spells.DeadlyBoom(); } }
@@ -827,7 +899,7 @@ namespace LKCamelot.script.item
         public override string Name { get { return "BOOK OF DEMON DEATH"; } }
         public override int MenReq { get { return 0; } }
         public override int MenReqPl { get { return 0; } }
-        public override int DexReq { get { return 180; } }
+        public override int DexReq { get { return 260; } }//updated dex req to 260
         public override int DexReqPl { get { return 12; } }
         public override int LevelReq { get { return 50; } }
         public override int LevelReqPl { get { return 5; } }
@@ -853,9 +925,10 @@ namespace LKCamelot.script.item
         public override string Name { get { return "BOOK OF EXECUTION"; } }
         public override int MenReq { get { return 0; } }
         public override int MenReqPl { get { return 0; } }
-        public override int DexReq { get { return 260; } }
-        public override int DexReqPl { get { return 6; } }
-        public override int LevelReq { get { return 0; } }
+        public override int DexReq { get { return 125; } }//updated to 125dex req
+        public override int DexReqPl { get { return 5; } }//updated to 5 pl dex req
+        public override int LevelReq { get { return 25; } }//updated to require level 25
+        public override int LevelReqPl { get { return 5; } }//updated to require 5 levels per book
         public override Class ClassReq { get { return Class.Swordsman; } }
 
         public override int BuyPrice { get { return 0; } }
@@ -884,7 +957,7 @@ namespace LKCamelot.script.item
         public override Class ClassReq { get { return Class.Swordsman; } }
 
         public override int BuyPrice { get { return 0; } }
-        public override int SellPrice { get { return 5000; } }
+        public override int SellPrice { get { return 25000; } }//set sell to 25,000
 
         public override spells.Spell SpellTaught { get { return new spells.FlyingSword(); } }
 
