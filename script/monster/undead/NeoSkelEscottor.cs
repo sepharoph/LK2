@@ -25,15 +25,15 @@ namespace LKCamelot.script.monster
                 return new LootPack(new LootPackEntry[]
                 {
                     
-                    new LootPackEntry(5.0, typeof(script.item.Saber), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(5.0, typeof(script.item.Simitar), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(5.0, typeof(script.item.TriangleShield), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(5.0, typeof(script.item.Cane), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(5.0, typeof(script.item.Mask), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(5.0, typeof(script.item.LongSpear), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(5.0, typeof(script.item.Mace), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(5.0, typeof(script.item.Cloak), "10d22+250", 40, 1, 1),
-                    new LootPackEntry(5.0, typeof(script.item.Mantle), "10d22+250", 40, 1, 1).
+                    new LootPackEntry(3.0, typeof(script.item.Saber), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(3.0, typeof(script.item.Simitar), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(3.0, typeof(script.item.TriangleShield), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(3.0, typeof(script.item.Cane), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(3.0, typeof(script.item.Mask), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(3.0, typeof(script.item.LongSpear), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(3.0, typeof(script.item.Mace), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(3.0, typeof(script.item.Cloak), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(3.0, typeof(script.item.Mantle), "10d22+250", 40, 1, 1).
                     new LootPackEntry(25.0, typeof(script.item.Gold), "10d30+550", 40, 1, 1),
                 });
             }
