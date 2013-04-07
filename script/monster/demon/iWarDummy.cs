@@ -24,7 +24,18 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.1, typeof(script.item.RevelationBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.FireHawkBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.AssassinBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.FireShotBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.ExecutionBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.LongStaff), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.Harpoon), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.ThunderStormBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.BattleArmor), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.LargeAxe), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.FullHelmet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.Claymore), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+550", 40, 1, 1),
                 });
             }
         }
@@ -68,11 +79,18 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.2, typeof(script.item.FlameRoundBook), "15d10+225", 1, 1, 1),
-               //     new LootPackEntry(1.0, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Saw), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Buckler), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "5d10+80", 40, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.FireHawkBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.AssassinBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.FireShotBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.ExecutionBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.LongStaff), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.Harpoon), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.ThunderStormBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.BattleArmor), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.LargeAxe), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.FullHelmet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.Claymore), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+550", 40, 1, 1),
                 });
             }
         }
@@ -116,11 +134,18 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.2, typeof(script.item.FlameRoundBook), "15d10+225", 1, 1, 1),
-               //     new LootPackEntry(1.0, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Saw), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Buckler), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "5d10+80", 40, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.FireHawkBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.AssassinBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.FireShotBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.ExecutionBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.LongStaff), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.Harpoon), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.ThunderStormBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.BattleArmor), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.LargeAxe), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.FullHelmet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.Claymore), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+550", 40, 1, 1),
                 });
             }
         }
@@ -164,11 +189,18 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.2, typeof(script.item.FlameRoundBook), "15d10+225", 1, 1, 1),
-               //     new LootPackEntry(1.0, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Saw), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.5, typeof(script.item.Buckler), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "5d10+80", 40, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.FireHawkBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.02, typeof(script.item.AssassinBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.FireShotBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.1, typeof(script.item.ExecutionBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.LongStaff), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.15, typeof(script.item.Harpoon), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.ThunderStormBook), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.BattleArmor), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.LargeAxe), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.FullHelmet), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(0.2, typeof(script.item.Claymore), "10d22+250", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d30+550", 40, 1, 1),
                 });
             }
         }
