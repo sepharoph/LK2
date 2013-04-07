@@ -19,7 +19,7 @@ namespace LKCamelot.script.item
         public override int InitMinHits { get { return 80; } }//adds 16 HIT
         public override int InitMaxHits { get { return 80; } }//adds 16 HIT
         public override int BuyPrice { get { return 5000; } }
-        public override int BuyPrice { get { return 2500; } }
+        public override int SellPrice { get { return 2500; } }
 
         public override Class ClassReq { get { return Class.Shaman; } }
         public override WeaponType WeaponType { get { return WeaponType.Spear; } }
