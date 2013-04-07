@@ -359,7 +359,7 @@
                     {
                         var AronNpc = World.NewNpcs.Where(xe => xe.Value.Name == "Aron").FirstOrDefault();
                         if (AronNpc.Value != null && World.Dist2d(player.X, player.Y, AronNpc.Value.X, AronNpc.Value.Y) < 7
-                            && player.Level >= 5 && player.Promo == 0)
+                            && player.Level >= 5)
                         {
                             switch (str2[3])
                             {
