@@ -690,11 +690,11 @@ namespace LKCamelot.model
                 for (int x = 0; x < 40; x++)
                 {
                     Point2D tempmob = null; string mapn = "Golem12";
-                    while ((tempmob = Map.SpawnPointFixed(mapn, 0, 0, 49, 49)) == null) ;
+                    while ((tempmob = Map.SpawnPointFixed(mapn, 0, 0, 150, 150)) == null) ;
                     World.NewMonsters.Add(temps, new script.monster.Rioter(temps++, tempmob.X, tempmob.Y, mapn));
                 }
 
-                for (int x = 0; x < 20; x++)
+                for (int x = 0; x < 45; x++)
                 {
                     Point2D tempmob = null;
                     while ((tempmob = Map.SpawnPointFixed("Venture4", 0, 0, 99, 79)) == null) ;
