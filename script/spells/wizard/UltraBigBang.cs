@@ -6,11 +6,11 @@
         public override int SpellLearnedIcon { get { return 64; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target; } }
 
-        public override int DamBase { get { return 288; } }
+        public override int DamBase { get { return 388; } }
         public override int DamPl { get { return 12; } }
         public override int ManaCost { get { return -65; } }
         public override int ManaCostPl { get { return 5; } }
-        public override int menCoff { get { return 12; } }
+        public override int menCoff { get { return 8; } }
         public override int Range
         {
             get
