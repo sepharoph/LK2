@@ -749,7 +749,91 @@ namespace LKCamelot.model
                     while ((tempmob = Map.SpawnPointFixed("Great", 0, 0, 199, 199)) == null) ;
                     World.NewMonsters.Add(temps, new script.monster.Centeur(temps++, tempmob.X, tempmob.Y, "Great"));
                 }
-
+                for (int x = 0; x < 12; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv1", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.SkelGiant(temps++, tempmob.X, tempmob.Y, "vv1"));
+                }
+                for (int x = 0; x < 12; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv1", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.Gargoyle(temps++, tempmob.X, tempmob.Y, "vv1"));
+                }
+                for (int x = 0; x < 12; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv2", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.Gargoyle(temps++, tempmob.X, tempmob.Y, "vv2"));
+                }
+                for (int x = 0; x < 12; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv2", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.SkelGiant(temps++, tempmob.X, tempmob.Y, "vv2"));
+                    for (int x = 0; x < 12; x++)
+                {
+                for (int x = 0; x < 12; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv3", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.Gargoyle(temps++, tempmob.X, tempmob.Y, "vv3"));
+                }
+                for (int x = 0; x < 12; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv3", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.Ninja(temps++, tempmob.X, tempmob.Y, "vv3"));
+                }
+                for (int x = 0; x < 12; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv3", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.Necromancer(temps++, tempmob.X, tempmob.Y, "vv3"));
+                }
+                for (int x = 0; x < 12; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv4", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.Ninja(temps++, tempmob.X, tempmob.Y, "vv4"));
+                }
+                for (int x = 0; x < 12; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv4", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.Necromancer(temps++, tempmob.X, tempmob.Y, "vv4"));
+                }
+                for (int x = 0; x < 12; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv4", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.LoupGarou(temps++, tempmob.X, tempmob.Y, "vv4"));
+                }
+                for (int x = 0; x < 12; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv4", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.GhostKnight(temps++, tempmob.X, tempmob.Y, "vv4"));
+                }
+                for (int x = 0; x < 12; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv5", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.GhostKnight(temps++, tempmob.X, tempmob.Y, "vv5"));
+                }
+                for (int x = 0; x < 12; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv5", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.DevilGuard(temps++, tempmob.X, tempmob.Y, "vv5"));
+                }
+                for (int x = 0; x < 60; x++)
+                {
+                    Point2D tempmob = null;
+                    while ((tempmob = Map.SpawnPointFixed("vv5", 0, 0, 200, 200)) == null) ;
+                    World.NewMonsters.Add(temps, new script.monster.Devil(temps++, tempmob.X, tempmob.Y, "vv5"));
+                }
                 for (int x = 0; x < 60; x++)
                 {
                     Point2D tempmob = null;
