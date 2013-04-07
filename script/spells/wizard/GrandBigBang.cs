@@ -6,7 +6,7 @@
         public override int SpellLearnedIcon { get { return 64; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target; } }
 
-        public override int DamBase { get { return 400; } }//compared to assassin special closed gap
+        public override int DamBase { get { return 612 } }//compared to assassin special closed gap
         public override int DamPl { get { return 13; } }//compared to assassin special closed gap
         public override int ManaCost { get { return -77; } }
         public override int ManaCostPl { get { return 6; } }
