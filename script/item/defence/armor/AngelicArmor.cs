@@ -21,7 +21,7 @@ namespace LKCamelot.script.item
         public override int InitMaxHits { get { return 300; } }
         public override int InitMaxMana { get { return 100; } }
 
-        public override int APStage { get { return 4; } }//Stage 5, need Sprite
+        public override int APStage { get { return 3; } }//Stage 4, need Sprite
 
         public override int LevelReq { get { return 240; } }
         public override Class ClassReq { get { return Class.Wizard | Class.Shaman; } }
