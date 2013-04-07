@@ -26,7 +26,7 @@ namespace LKCamelot.script.monster
                 {
                     new LootPackEntry(2, typeof(script.item.ThunderCrossBook), "15d10+225", 1, 1, 1),
                     new LootPackEntry(2, typeof(script.item.TeleportBook), "15d10+225", 1, 1, 1),
-
+             //  new LootPackEntry(2, typeof(script.item.ComebackBook), "15d10+225", 1, 1, 1),
                     new LootPackEntry(2, typeof(script.item.HardLeather), "15d10+225", 1, 1, 1),
                     new LootPackEntry(2, typeof(script.item.EnamelLeather), "15d10+225", 1, 1, 1),
                     new LootPackEntry(2, typeof(script.item.FieldCap), "15d10+225", 1, 1, 1),
