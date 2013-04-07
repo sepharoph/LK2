@@ -8,7 +8,7 @@
 
         public override int DamBase { get { return 636; } }//compared to other spells
         public override int DamPl { get { return 14; } }
-        public override int ManaCost { get { return -78; } }
+        public override int ManaCost { get { return -78; } }//compared to other spells
         public override int ManaCostPl { get { return 6; } }
         public override LKCamelot.library.Class ClassReq { get { return LKCamelot.library.Class.Shaman; } }
         public override int menCoff { get { return 8; } }
