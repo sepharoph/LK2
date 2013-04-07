@@ -301,7 +301,7 @@ namespace LKCamelot.script.monster
         public override int Dam { get { return 650; } }
         public override int AC { get { return 385; } }
         public override int Hit { get { return 750; } }
-        public override int XP { get { return 45000; } } //150000
+        public override int XP { get { return 150000; } } //150000 = 4500 3% , 1500 1%
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
@@ -312,10 +312,14 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.01, typeof(script.item.GoliathPlate), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.DiamondArmor), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.05, typeof(script.item.AssassinSpecialBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.05, typeof(script.item.GrandBigBangBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.005, typeof(script.item.DiamondArmor), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.005, typeof(script.item.GoliathPlate), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.AssassinSpecialBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.GrandBigBangBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.Excalido), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.BarbarianAxe), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.ArmShield), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.BoneMail), "15d10+225", 1, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "5d1000+3000", 40, 1, 1),
                 });
             }
@@ -349,7 +353,7 @@ namespace LKCamelot.script.monster
         public override int Dam { get { return 750; } }
         public override int AC { get { return 445; } }
         public override int Hit { get { return 850; } }
-        public override int XP { get { return 70000; } } //210000
+        public override int XP { get { return 240000; } } //120000 (240000 = 7200 3%, 2400 1%)
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
@@ -360,11 +364,11 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.01, typeof(script.item.GoliathPlate), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.DiamondArmor), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.009, typeof(script.item.DiamondArmor), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.009, typeof(script.item.GoliathPlate), "15d10+225", 1, 1, 1),
                     new LootPackEntry(0.05, typeof(script.item.AssassinSpecialBook), "15d10+225", 1, 1, 1),
                     new LootPackEntry(0.05, typeof(script.item.GrandBigBangBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "5d1000+3000", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "5d1000+4000", 40, 1, 1),
                 });
             }
         }
@@ -397,7 +401,7 @@ namespace LKCamelot.script.monster
         public override int Dam { get { return 600; } }
         public override int AC { get { return 360; } }
         public override int Hit { get { return 700; } }
-        public override int XP { get { return 40000; } } //120000
+        public override int XP { get { return 120000; } } //120000 = 3600 3%, 1200 1%)
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
@@ -408,8 +412,14 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.01, typeof(script.item.GoliathPlate), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.DiamondArmor), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.005, typeof(script.item.DiamondArmor), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.005, typeof(script.item.GoliathPlate), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.AssassinSpecialBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.025, typeof(script.item.GrandBigBangBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.Excalido), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.BarbarianAxe), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.ArmShield), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.BoneMail), "15d10+225", 1, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "5d1000+3000", 40, 1, 1),
                 });
             }
@@ -443,7 +453,7 @@ namespace LKCamelot.script.monster
         public override int Dam { get { return 850; } }
         public override int AC { get { return 470; } }
         public override int Hit { get { return 1100; } }
-        public override int XP { get { return 80000; } } //255000
+        public override int XP { get { return 293350; } } //255000 (293350 = 8800 at 3% 2933 at 1%)
         public override int Color { get { return 0; } }
         public override int SpawnTime { get { return 30000; } }
         public override Race Race { get { return Race.Demon; } }
@@ -454,9 +464,13 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.01, typeof(script.item.Cadeceus), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.DiamondArmor), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.01, typeof(script.item.GoliathPlate), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.0075, typeof(script.item.Cadeceus), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.0075, typeof(script.item.ForkedSpear), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.0075, typeof(script.item.FamilyShield), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.0075, typeof(script.item.RocketMaul), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.0075, typeof(script.item.WarriorAngel), "15d10+225", 1, 1, 1),                                    
+                    new LootPackEntry(0.009, typeof(script.item.DiamondArmor), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.009, typeof(script.item.GoliathPlate), "15d10+225", 1, 1, 1),
                     new LootPackEntry(0.05, typeof(script.item.AssassinSpecialBook), "15d10+225", 1, 1, 1),
                     new LootPackEntry(0.05, typeof(script.item.GrandBigBangBook), "15d10+225", 1, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "5d1000+3000", 40, 1, 1),
@@ -503,11 +517,15 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
+                    new LootPackEntry(0.009, typeof(script.item.RingOfStrength), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.009, typeof(script.item.RingOfDexterity), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.009, typeof(script.item.RingOfMentality), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.009, typeof(script.item.RingOfVitality), "15d10+225", 1, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.GrandStaff), "15d10+225", 1, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.GreatLance), "15d10+225", 1, 1, 1),
                     new LootPackEntry(0.05, typeof(script.item.AssassinSpecialBook), "15d10+225", 1, 1, 1),
                     new LootPackEntry(0.05, typeof(script.item.GrandBigBangBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d1000+5000", 40, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "10d800+5000", 40, 1, 1),
                 });
             }
         }
@@ -551,11 +569,11 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.1, typeof(script.item.TripleBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.TwisterBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.2, typeof(script.item.FlameRoundBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.075, typeof(script.item.TripleBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.075, typeof(script.item.TwisterBook), "15d10+225", 1, 1, 1),
                //     new LootPackEntry(1.0, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(15.0, typeof(script.item.Gold), "5d10+80", 40, 1, 1),
+                    new LootPackEntry(0.5, typeof(script.item.FireWallBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(15.0, typeof(script.item.Gold), "5d10+400", 40, 1, 1),
                 });
             }
         }
@@ -599,10 +617,10 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.1, typeof(script.item.TripleBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.TwisterBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.075, typeof(script.item.TripleBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.075, typeof(script.item.TwisterBook), "15d10+225", 1, 1, 1),
                //     new LootPackEntry(1.0, typeof(script.item.DemonDeathBook), "15d10+225", 1, 1, 1),
-                    new LootPackEntry(1.0, typeof(script.item.FireWallBook), "15d10+225", 1, 1, 1),
+                    new LootPackEntry(0.5, typeof(script.item.FireWallBook), "15d10+225", 1, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "5d10+400", 40, 1, 1),
                 });
             }
