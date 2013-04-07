@@ -9,13 +9,16 @@ namespace LKCamelot.script.item
 
         public override int DamBase { get { return 182; } }
         public override int ACBase { get { return 120; } }
-
+        public override int InitMaxMana { get { return 189; } }//add max mana plz approve!!
+        
         public override int StrReq { get { return 190; } }
         public override int MenReq { get { return 425; } }
         public override int DexReq { get { return 0; } }
-        public override int ReduceCast { get { return 500; } }
-        public override int InitMinHits { get { return 80; } }
-        public override int InitMaxHits { get { return 80; } }
+        public override int LevelReq { get { return 80; } }//reflects item is for 3rd promo
+        
+        public override int ReduceCast { get { return 1000; } }//10 dec time
+        public override int InitMinHits { get { return 0; } }//adds 0 HIT
+        public override int InitMaxHits { get { return 0; } }//adds 0 HIT
         public override int BuyPrice { get { return 5000; } }
 
         public override Class ClassReq { get { return Class.Shaman; } }
