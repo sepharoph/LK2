@@ -24,10 +24,10 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.1, typeof(script.item.CurveShockBook), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.WindySpiritBook), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.FlameStrikeBook), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.CurveShockBook), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.WindySpiritBook), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.FlameStrikeBook), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.01, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
                     new LootPackEntry(0.01, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d12+15000", 40, 1, 1),
@@ -74,15 +74,15 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.1, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d12+15000", 40, 1, 1),
                 });
             }
@@ -127,15 +127,15 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.1, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d12+15000", 40, 1, 1),
                 });
             }
@@ -180,15 +180,15 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.1, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d12+15000", 40, 1, 1),
             }
         }
@@ -232,15 +232,15 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.1, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d12+15000", 40, 1, 1),
                 });
             }
@@ -285,15 +285,15 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.1, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d12+15000", 40, 1, 1),
                 });
             }
@@ -338,15 +338,15 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.1, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d12+15000", 40, 1, 1),
                 });
             }
@@ -441,15 +441,15 @@ namespace LKCamelot.script.monster
             {
                 return new LootPack(new LootPackEntry[]
                 {
-                    new LootPackEntry(0.1, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
-                    new LootPackEntry(0.1, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LaurelCrown), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DiamondStick), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.HolyDefender), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.LionHeart), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.DragonBlade), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PowerStrong), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.PigBasket), "10d12+150", 40, 1, 1),
+                    new LootPackEntry(0.05, typeof(script.item.Calypso), "10d12+150", 40, 1, 1),
                     new LootPackEntry(15.0, typeof(script.item.Gold), "10d12+15000", 40, 1, 1),
                 });
             }
