@@ -8,8 +8,8 @@
 
         public override int DamBase { get { return 2000; } }//updated
         public override int DamPl { get { return 50; } }//updated
-        public override int ManaCost { get { return 100; } }//updated
-        public override int ManaCostPl { get { return 5; } }//updated
+        public override int ManaCost { get { return -100; } }//updated
+        public override int ManaCostPl { get { return 6; } }//updated
         public override int RecastTime { get { return 2000; } }//updated
         public override int strCoff { get { return 2; } }//attempted this line
         public override LKCamelot.library.Class ClassReq { get { return LKCamelot.library.Class.Knight; } }
