@@ -18,8 +18,8 @@ namespace LKCamelot.script.item
 
      		public override int APStage { get { return 3; } }
         
-      		public override int BuyPrice { get { return 400000; } }
-     		public override int SellPrice { get { return 200000; } }
+      		public override int BuyPrice { get { return 200000; } }
+     		public override int SellPrice { get { return 100000; } }
 
 		public override Class ClassReq { get { return 0; } }
 		public override ArmorType ArmorType { get { return ArmorType.Armor; } }
