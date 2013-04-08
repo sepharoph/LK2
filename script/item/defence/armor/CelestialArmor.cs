@@ -20,6 +20,9 @@ namespace LKCamelot.script.item
         public override int InitMinHits { get { return 300; } }
         public override int InitMaxHits { get { return 300; } }
         public override int InitMaxMana { get { return 100; } }
+        
+        public override int BuyPrice { get { return 900000; } }
+        public override int SellPrice { get { return 400000; } }
 
         public override int APStage { get { return 3; } }//Stage 4, need Sprite
 
