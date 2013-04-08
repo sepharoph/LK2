@@ -12,6 +12,7 @@
         public override int ManaCostPl { get { return 3; } }
         public override LKCamelot.library.Class ClassReq { get { return LKCamelot.library.Class.Swordsman; } }
         public override int Range { get { return 1; } }
+       // public override int dexCoff { get { return 0; } }(Forumla is HalfCurrentHP+DEX), will this fix?
         public override int RecastTime { get { return 6000; } }//6 second cast delay
         public override SpellSequence Seq
         {
