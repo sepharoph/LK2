@@ -9,7 +9,7 @@ namespace LKCamelot.script.item
     public class Zel : Item
     {
         public override string Name { get { return "ZELGO MER"; } }
-        public override int SellPrice { get { return 70000; } }
+        public override int SellPrice { get { return 105000; } }
         public override int BuyPrice { get { return 210000; } }
 
         public Zel()
