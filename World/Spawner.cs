@@ -690,7 +690,7 @@ namespace LKCamelot.model
                 for (int x = 0; x < 40; x++)
                 {
                     Point2D tempmob = null; string mapn = "Golem12";
-                    while ((tempmob = Map.SpawnPointFixed(mapn, 0, 0, 150, 150)) == null) ;
+                    while ((tempmob = Map.SpawnPointFixed(mapn, 0, 0, 79, 79)) == null) ; //bototom right coords 79:79
                     World.NewMonsters.Add(temps, new script.monster.Rioter(temps++, tempmob.X, tempmob.Y, mapn));
                 }
 
