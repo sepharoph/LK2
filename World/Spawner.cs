@@ -687,14 +687,14 @@ namespace LKCamelot.model
                     while ((tempmob = Map.SpawnPointFixed(mapn, 0, 0, 49, 49)) == null) ;
                     World.NewMonsters.Add(temps, new script.monster.SuperIronGolem(temps++, tempmob.X, tempmob.Y, mapn));
                 }
-                for (int x = 0; x < 40; x++)
+                for (int x = 0; x < 45; x++)
                 {
                     Point2D tempmob = null; string mapn = "Golem12";
                     while ((tempmob = Map.SpawnPointFixed(mapn, 0, 0, 79, 79)) == null) ; //bototom right coords 79:79
                     World.NewMonsters.Add(temps, new script.monster.Rioter(temps++, tempmob.X, tempmob.Y, mapn));
                 }
 
-                for (int x = 0; x < 45; x++)
+                for (int x = 0; x < 100; x++)
                 {
                     Point2D tempmob = null;
                     while ((tempmob = Map.SpawnPointFixed("Venture4", 0, 0, 99, 79)) == null) ;
