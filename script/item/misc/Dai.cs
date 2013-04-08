@@ -9,7 +9,7 @@ namespace LKCamelot.script.item
     public class Dai : Item
     {
         public override string Name { get { return "DAIYEN FOOELS"; } }
-        public override int SellPrice { get { return 114000; } }
+        public override int SellPrice { get { return 125000; } }
         public override int BuyPrice { get { return 250000; } }
 
         public Dai()
