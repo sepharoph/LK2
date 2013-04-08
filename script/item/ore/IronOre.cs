@@ -10,6 +10,7 @@ namespace LKCamelot.script.item
     {
         public override string Name { get { return "IRON " + (script.item.BaseOre.OreTypeE)Stage + " : " + Quantity; } }
         public override int BuyPrice { get { return 500; } }
+        public override int SellPrice { get { return 100; } }
 
         public override void SetSprite()
         {
