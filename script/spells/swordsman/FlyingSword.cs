@@ -10,6 +10,7 @@
         public override int DamPl { get { return 15; } }
         public override int ManaCost { get { return -80; } }
         public override int ManaCostPl { get { return 6; } }
+        public override int dexCoff { get { return 6; } }//Believe this the issue
         public override LKCamelot.library.Class ClassReq { get { return LKCamelot.library.Class.Swordsman; } }
         public override SpellSequence Seq
         {
