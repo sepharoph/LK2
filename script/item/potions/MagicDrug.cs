@@ -10,6 +10,7 @@ namespace LKCamelot.script.item.potions
     {
         public override string Name { get { return "Magic Drug"; } }
         public override int BuyPrice { get { return 250; } }
+        public override int SellPrice { get { return 125; } }
 
         public MagicDrug() : base(21)
         {
