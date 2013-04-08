@@ -7,7 +7,7 @@ namespace LKCamelot.script.item
     {
         public override string Name { get { return "S-AMULET"; } }
 
-        public override int DamBase { get { return 150; } }
+        public override int DamBase { get { return 250; } }// Definetly *ONLY* gave 250DMG, per XLN!
         public override int ACBase { get { return 0; } }
 
         public override int StrReq { get { return 0; } }
