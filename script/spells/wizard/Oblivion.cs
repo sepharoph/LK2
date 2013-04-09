@@ -7,7 +7,7 @@ namespace LKCamelot.script.spells
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
 /*This spell should make a monster level 40 + (3 per book) lose agro to 
-player for 6 seconds and become confused*/
+player for 6 seconds and become confused, also please move to area for non class specific spells*/
 
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
