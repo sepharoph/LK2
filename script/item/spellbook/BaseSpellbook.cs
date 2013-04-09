@@ -401,6 +401,8 @@ namespace LKCamelot.script.item
         public override int DexReqPl { get { return 5; } }
         public override int LevelReq { get { return 50; } }
         public override int LevelReqPl { get { return 2; } }
+        
+        public override int SellPrice { get { return 50000; } }
 
         public override spells.Spell SpellTaught { get { return new spells.BigBang(); } }
         public override Class ClassReq { get { return Class.Wizard; } }
@@ -525,6 +527,7 @@ namespace LKCamelot.script.item
         public override int DexReq { get { return 268; } }
         public override int DexReqPl { get { return 6; } }
         public override int LevelReq { get { return 0; } }
+        public override Class ClassReq { get { return Class.Shaman; } }
 
         public override int BuyPrice { get { return 4000; } }
         public override int SellPrice { get { return 50000; } }
