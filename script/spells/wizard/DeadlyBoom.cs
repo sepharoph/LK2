@@ -9,7 +9,7 @@
 /*Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -10% Mana 
 (Max level 99-12 -5% Mana Per Cast) Per Cast, Damage would Start (w/ 12 Books) 
 668 damage + menCoff, (Max level 99-12 (668damage + menCoff) + 9%)
-This spell could be casted only on all enemy's. */
+This spell could be casted on all enemy Player's/Monster's. */
 
         public override int DamBase { get { return 533; } }//compared to big bang,assassin,revelation
         public override int DamPl { get { return 15; } }
