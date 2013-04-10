@@ -7,6 +7,7 @@
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
 /*Level of spell increased duration of immobilize and reduced mana cost, Starting at 4Seconds 
+(when frozen unable to Teleport!)
 (Max 10Seconds 99:12) for immobilize debuff. Level of spell also reduced mana cost (w1/ 12 books)
 spell costed -10% (Mana Cost -5% Mana at Max Lvl 99:12).
 This spell could be casted on All Players/Monsters to debuff but not on self.
