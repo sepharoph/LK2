@@ -7,7 +7,13 @@
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
 /* Reduces Magic Damage By Monsters/Players by 10% lasts 3 minutes, Also message was displayed
-to the player when counting down to remove effect 30seconds than 10-1 then says Tornado Removed*/
+to the player when counting down to remove effect 30seconds than 10-1 then says Tornado Removed
+
+Level of spell decreased mana cost and increased duration of debuff
+, Starting at (w/ 12Books) -15% Mana (Max level 99-12 -12% Mana) Per Cast, 
+Duration would Start (w/ 12 Books) 3 minutes, (Max level 99:12 would last 5 Minutes)
+This spell could be casted on all Enemy Players/Monster's. */
+
 
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
