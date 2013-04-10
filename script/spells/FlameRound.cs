@@ -11,6 +11,12 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 18; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Casted; } }
 
+/* Shoots a circle of fire from the player.
+Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -54 Mana 
+(Max level 99:12 -32 Mana Per Cast) Per Cast, Damage would Start (w/ 12 Books) 
+136 damage, (Max level 99:12 (136 damage) + 9%)
+This spell could be casted on all enemy Player's/Monster's. */
+
         public override int DamBase { get { return 70; } }
         public override int DamPl { get { return 6; } }
         public override int ManaCost { get { return 54; } }
