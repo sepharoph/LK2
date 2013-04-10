@@ -10,6 +10,8 @@ namespace LKCamelot.script.spells
         public override string Name { get { return "FIRE PROTECTOR"; } }
         public override int SpellLearnedIcon { get { return 19; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Casted; } }
+/* Fireproector would create a firewall around the player, doing damage to all melee attackers starting at
+66 damage plus 6 additional damage per book. Also provided +26% AC +1% per book (+35% AC MAX)
 
 /*Level of spell reduced mana cost and increased duration, Starting at 10minutes 
 (Max 15 Minutes 99:12) for buff, mana cost would start at -26% (-22% Mana at Max Lvl 99:12).
