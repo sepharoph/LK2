@@ -1,8 +1,8 @@
 ﻿namespace LKCamelot.script.spells
 {
-    public class FrameStrike : Spell
+    public class FlameStrike : Spell
     {
-        public override string Name { get { return "FRAME STRIKE"; } }
+        public override string Name { get { return "FLAME STRIKE"; } }
         public override int SpellLearnedIcon { get { return 67; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
@@ -30,7 +30,7 @@
             }
         }
 
-        public FrameStrike()
+        public FlameStrike()
         {
         }
     }
