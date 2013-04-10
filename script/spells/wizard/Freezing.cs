@@ -11,7 +11,8 @@
 190 damage + menCoff, (Max level 99:12 (1950damage + menCoff) + 9%)
 This spell could be cast on All Enemy Players/Monsters. Also message was displayed 
 to the player when counting down to remove effect of freeze/immobilize at 
-10 Seconds left on Frozen Effect.,5,4,3,2,1 then says Frozen Effect Removed */
+10 Seconds left on Frozen Effect.,5,4,3,2,1 then says Frozen Effect Removed 
+Very Comparable to Stone Curse for Shaman*/
 
         public override int DamBase { get { return 80; } }
         public override int DamPl { get { return 10; } }
