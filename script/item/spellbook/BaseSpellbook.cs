@@ -177,9 +177,9 @@ namespace LKCamelot.script.item
             m_ItemID = 3;
         }
     }
-              public class ComeBackBook : BaseSpellbook
+              public class ComebackBook : BaseSpellbook
     {
-        public override string Name { get { return "BOOK OF COME BACK"; } }
+        public override string Name { get { return "BOOK OF COMEBACK"; } }
         public override int MenReq { get { return 38; } }
         public override int MenReqPl { get { return 10; } }
         public override int DexReq { get { return 0; } }
@@ -192,11 +192,11 @@ namespace LKCamelot.script.item
 
         public override spells.Spell SpellTaught { get { return new spells.ComeBack(); } }
 
-        public ComeBackBook() : base(3)
+        public ComebackBook() : base(3)
         {
         }
 
-        public ComeBackBook(Serial serial) : base(serial)
+        public ComebackBook(Serial serial) : base(serial)
         {
             m_ItemID = 3;
         }
@@ -227,7 +227,7 @@ namespace LKCamelot.script.item
         }
     }
     
-            public class PickUpBook : BaseSpellbook
+            public class PickupBook : BaseSpellbook
     {
         public override string Name { get { return "BOOK OF PICK UP"; } }
         public override int MenReq { get { return 62; } }
@@ -240,13 +240,13 @@ namespace LKCamelot.script.item
         public override int BuyPrice { get { return 50000; } }
         public override int SellPrice { get { return 25000; } }//sells for 500
 
-        public override spells.Spell SpellTaught { get { return new spells.PickUp(); } }
+        public override spells.Spell SpellTaught { get { return new spells.Pickup(); } }
 
-        public PickUpBook() : base(3)
+        public PickupBook() : base(3)
         {
         }
 
-        public PickUpBook(Serial serial) : base(serial)
+        public PickupBook(Serial serial) : base(serial)
         {
             m_ItemID = 3;
         }
@@ -703,6 +703,31 @@ namespace LKCamelot.script.item
         }
 
         public SmogScreenBook(Serial serial) : base(serial)
+        {
+            m_ItemID = 3;
+        }
+    }
+                public class SilverScreenBook : BaseSpellbook
+    {
+        public override string Name { get { return "BOOK OF SILVER SCREEN"; } }
+        public override int MenReq { get { return 546; } }
+        public override int MenReqPl { get { return 12; } }
+        public override int DexReq { get { return 155; } }
+        public override int DexReqPl { get { return 10; } }
+        public override int LevelReq { get { return 70; } }
+        public override int LevelReqPl { get { return 2; } }
+        public override Class ClassReq { get { return Class.Wizard; } }
+
+        public override int BuyPrice { get { return 60000; } }
+        public override int SellPrice { get { return 30000; } }
+
+        public override spells.Spell SpellTaught { get { return new spells.SilverScreen(); } }
+
+        public SilverScreenBook() : base(3)
+        {
+        }
+
+        public SilverScreenBook(Serial serial) : base(serial)
         {
             m_ItemID = 3;
         }
