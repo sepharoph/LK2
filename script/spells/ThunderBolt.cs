@@ -6,7 +6,7 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 64; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
-/*Effect is a Bolt of Thunde similar to ThunderStorm, but only does damage to Undead/Demon/Animals.
+/*Effect is a Bolt of Thunder similar to ThunderStorm, but only does damage to Undead/Demon/Animals.
 NOT PLAYERS.
 Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -60 Mana 
 (Max level 99:12 -30) Per Cast, Damage would Start (w/ 12 Books) 
