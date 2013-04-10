@@ -11,6 +11,16 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 28; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Casted; } }
 
+/* Teague Sheild would create a buff for the player, doing damage to all melee attackers starting at
+35 damage plus 5 additional damage per book. Also provided +8% AC +4% per book (+52% MAX AC)
+And Funnelled all damage through Mana Bar instead of health bar til player had 0 mana.
+
+Level of spell reduced mana cost and increased duration, Starting at 20minutes 
+(Max 30 Minutes 99:12) for buff, mana cost would start at -66 (+25 Mana at Max Lvl 99:12).
+This spell could be casted only on self. Also message was displayed to the player 
+when counting down to remove effect
+    30seconds than 10,5-1 then says Magic Shield Removed (Sold at Employee)*/
+
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
         public override int ManaCost { get { return 66; } }
