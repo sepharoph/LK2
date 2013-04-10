@@ -7,8 +7,8 @@
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target; } }
 
 /*Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -12% Mana 
-(Max level 99-12 -8%) Per Cast, Damage would Start (w/ 12 Books) 
-790 damage + menCoff, (Max level 99-12 (790damage + menCoff) + 9%)
+(Max level 99:12 -8%) Per Cast, Damage would Start (w/ 12 Books) 
+790 damage + menCoff, (Max level 99:12 (790damage + menCoff) + 9%)
 This spell could be casted on all enemy's. */
 
         public override int DamBase { get { return 636; } }//compared to other spells
