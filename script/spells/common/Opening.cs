@@ -8,15 +8,14 @@ namespace LKCamelot.script.spells
 
 /* Spell opens doors that may be sealed
 
-/*Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -5% Mana 
-(Max level 99:12 -0 Mana) Per Cast */
+/*Level of spell decreased mana cost, Starting at (w/ 12Books) -5% Mana 
+(Max level 99:12 -0% Mana) Per Cast */
 
 
-        public override int DamBase { get { return 666; } }
-        public override int DamPl { get { return 20; } }
+        public override int DamBase { get { return 0; } }
+        public override int DamPl { get { return 0; } }
         public override int ManaCost { get { return -5; } }
         public override int ManaCostPl { get { return 0; } }
-        public override int menCoff { get { return 9; } }
         public override int Range
         {
             get
