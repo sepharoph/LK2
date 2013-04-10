@@ -18,7 +18,7 @@ namespace LKCamelot.script.item
         
         public override int SellPrice { get { return 100000; } }
 
-        public override Class ClassReq { get { return Class.Knight | Class.Swordsman; } }
+        public override Class ClassReq { get { return Class.Knight; } }
         public override ArmorType ArmorType { get { return ArmorType.Shield; } }
 
         public HolyDefender()
