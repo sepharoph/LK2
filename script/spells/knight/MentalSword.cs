@@ -6,6 +6,12 @@
         public override int SpellLearnedIcon { get { return 50; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Casted; } }
 
+/*Increases sword's damage.
+Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -33% Mana 
+(Max level 99:12 -28% Mana) Per Cast, Damage would Start (w/ 12 Books) 
++180% damage, (Max level 99-12 (180% damage) + 20%)
+This spell can only be casted on self. */
+
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
         public override int ManaCost { get { return -33; } }
