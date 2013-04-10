@@ -11,7 +11,7 @@ removed from HIT, Level of spell reduced mana cost and increased duration, Start
 (Max 5 Minutes 99-12) for buff (Mana Cost would give 4% Mana Back at Max Lvl 99-12).
 This spell could be casted on All Players/Monsters to debuff but not on self.
 Also message was displayed to the player when counting down to remove effect
-    30seconds than 10,5-1 then says Butterfly Removed (Sold at Stall)*/
+    30seconds than 10,5-1 then says Butterfly Removed */
 
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
