@@ -6,6 +6,8 @@
         public override int SpellLearnedIcon { get { return 42; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
+/* Holds target in place levels 11~88(+7) levels per book, lasted 4s*/
+
         public override int DamBase { get { return 80; } }
         public override int DamPl { get { return 10; } }
         public override int ManaCost { get { return -60; } }
