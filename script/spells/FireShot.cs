@@ -11,8 +11,14 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 13; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
-        public override int DamBase { get { return 300; } }
-        public override int DamPl { get { return 5; } }
+/* Shoots Fire ball to hurt Enemy, Similar to FireBall
+Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -180 Mana 
+(Max level 99:12 -135) Per Cast, Damage would Start (w/ 12 Books) 
+448 damage, (Max level 99:12 (448 damage) + 9%)
+This spell could be casted on all enemy Player's/Monster's. */
+
+        public override int DamBase { get { return 360; } }
+        public override int DamPl { get { return 8; } }
         public override int ManaCost { get { return 180; } }
         public override int ManaCostPl { get { return 0; } }
 
