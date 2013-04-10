@@ -15,7 +15,7 @@ namespace LKCamelot.script.spells
 (Max 30 Minutes 99:12) for buff, mana cost would start at -20% (-10% Mana at Max Lvl 99:12).
 This spell could be casted only on self. Also message was displayed to the player 
 when counting down to remove effect
-    30seconds than 10,5-1 then says Magic Shield Removed (Sold at Employee)*/
+    30seconds than 10,5-1 then says Magic Armor Removed (Sold at Employee)*/
 
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
