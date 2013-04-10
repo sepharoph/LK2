@@ -6,8 +6,10 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 64; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
-/* Summons a Medusa, Looks like Monster, Is Demon, Has 0 DMG , 
-Taunts All Mobs on Caster to Attack Medusa 70AC (+10 per Book) */
+/* Summons a Medusa, Looks like a Monster, Is Demon, Has 0 DMG , Taunts All Mobs on 
+caster to Attack Medusa 70AC (+10 per Book), Level of spell decreased mana cost and 
+increased Medusa Effectiveness, Starting at (w/ 12Books) -32% Mana (Max level 99-12 -28% Mana) 
+Per Cast, Medusa would Start (w/ 12 Books) 180 AC, (Max level 99-12 180 AC +20% */
 
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
