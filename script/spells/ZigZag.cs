@@ -11,6 +11,12 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 21; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
+/*spreads ZigZagging Electric on Ground
+Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -16 Mana 
+(Max level 99:12 -4 Mana Per Cast) Per Cast, Damage would Start (w/ 12 Books) 
+66 damage, (Max level 99:12 (66 Damage) + 9%)
+This spell could be casted on all enemy Player's/Monster's. */
+
         public override int DamBase { get { return 22; } }
         public override int DamPl { get { return 4; } }
         public override int ManaCost { get { return 16; } }
