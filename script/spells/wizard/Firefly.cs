@@ -15,7 +15,7 @@ Also message was displayed to the player when counting down to remove effect
 
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
-        public override int ManaCost { get { return 48; } }
+        public override int ManaCost { get { return -48; } }
         public override int ManaCostPl { get { return 4; } }
         public override LKCamelot.library.Class ClassReq { get { return LKCamelot.library.Class.Wizard; } }
         public override SpellSequence Seq
