@@ -13,7 +13,8 @@ can be up at a time, and each tick of spell can miss if hit too low.
 Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -96 Mana 
 (Max level 99:12 -48) Per Cast, Damage would Start (w/ 12 Books) 
 218 damage, (Max level 99:12 (218 damage) + 9%)
-This spell could be casted on all enemy Player's/Monster's using @pk function. */
+This spell could be casted on all enemy Player's/Monster's using @pk function.
+This Book was Sold at Stall for 25,000*/
 
         public override int DamBase { get { return 130; } }
         public override int DamPl { get { return 8; } }
