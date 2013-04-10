@@ -11,6 +11,12 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 12; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
+/* Shoots Fireball at Target
+Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -32 Mana 
+(Max level 99-12 -16) Per Cast, Damage would Start (w/ 12 Books) 
+112 damage, (Max level 99-12 (112 damage) + 9%)
+This spell could be casted on all enemy Player's/Monster's. */
+
         public override int DamBase { get { return 46; } }
         public override int DamPl { get { return 6; } }
         public override int ManaCost { get { return 32; } }
