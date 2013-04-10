@@ -6,6 +6,12 @@
         public override int SpellLearnedIcon { get { return 40; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
+/*Level of spell increased duration and damage, Starting at 3Seconds 
+(Max 9Seconds 99-12) for debuff (Damage would increase by 10% at Max Lvl 193Damage 99-12).
+This spell could be casted only on self. Also message was displayed to the player 
+when counting down to remove effect of slow 5-1 then says Hail Storm Slow Effect
+Removed */
+
         public override int DamBase { get { return 76; } }
         public override int DamPl { get { return 9; } }
         public override int ManaCost { get { return -42; } }
