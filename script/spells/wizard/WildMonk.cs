@@ -7,7 +7,12 @@ namespace LKCamelot.script.spells
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
 /* Summons a Wild Monk, Looks like Monster Monk From Cave, Is Undead, Has 320DMG (+10 per Book)
-90AC (+10 per Book) */
+90AC (+10 per Book) 
+
+Level of spell decreased mana cost and increased Wild Monk's Effectiveness, 
+Starting at (w/ 12Books) -26% Mana (Max level 99-12 -22% Mana) 
+Per Cast, Wild Monk would Start (w/ 12 Books) 430 DMG and 200 AC, (Max level 99:12 
+430 DMG and 180 AC (+20%) = 516DMG and 216 AC */
 
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
