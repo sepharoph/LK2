@@ -6,7 +6,8 @@
         public override int SpellLearnedIcon { get { return 34; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
-/* Reduces Magic Damage By Monsters/Players by 10% lasts 3 minutes*/
+/* Reduces Magic Damage By Monsters/Players by 10% lasts 3 minutes, Also message was displayed
+to the player when counting down to remove effect 30seconds than 10-1 then says Tornado Removed*/
 
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
