@@ -11,6 +11,11 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 74; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Casted; } }
 
+        /*Allows player to attack 3 squares at once, more books = more damage to square 2,3.
+        Level of spell decreased mana cost and increases attack speed, Starting at (w/ 12Books) -50 Mana 
+        (Max level 99:12 -0 Mana) Per Cast, Attack Speed -0 1:12 (Max level 99:12 -99 Attack Speed)
+         This spell would allow players to hit enemy's in correct squares. */
+
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
         public override int ManaCost { get { return -50; } }
