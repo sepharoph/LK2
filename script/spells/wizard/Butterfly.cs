@@ -6,6 +6,12 @@
         public override int SpellLearnedIcon { get { return 71; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
+/* Spell Increased HIT by 10%books 1-4(+10%5-8 +10% 9-12, Total of 30% at 12Books added to HIT, 
+Level of spell reduced mana cost and increased duration, Starting at 3minutes for buff.
+This spell could be casted on players to buff friends aswell.
+Also message was displayed to the player when counting down to remove effect
+    30seconds than 10-1 then says Butterfly Removed*/
+
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
         public override int ManaCost { get { return 0; } }
