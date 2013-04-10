@@ -11,8 +11,11 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 27; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Casted; } }
 
-/* Also message was displayed to the player when counting down to remove effect
-    30seconds than 10-1 then says Magic Shield Removed*/
+/*Level of spell reduced mana cost and increased duration, Starting at 20minutes (Max 30 Minutes 99-12)
+for buff (Mana Cost would give 4% Mana Back at Max Lvl 99-12).
+This spell could be casted only on self. Also message was displayed to the player 
+when counting down to remove effect
+    30seconds than 10-1 then says Magic Shield Removed (Sold at Employee)*/
 
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
