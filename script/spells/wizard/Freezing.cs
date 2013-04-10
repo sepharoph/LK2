@@ -6,9 +6,9 @@
         public override int SpellLearnedIcon { get { return 42; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
-/*Level of spell increased duration of slow and damage, Starting at 4Seconds 
-(Max 10Seconds 99-12) for slow debuff Damage would Start (w/ 12 Books) 
-190 damage + menCoff, (Max level 99-12 (1950damage + menCoff) + 9%)
+/*Level of spell increased duration of immobilize and damage, Starting at 4Seconds 
+(Max 10Seconds 99:12) for slow debuff Damage would Start (w/ 12 Books) 
+190 damage + menCoff, (Max level 99:12 (1950damage + menCoff) + 9%)
 This spell could be cast on All Enemy Players/Monsters. Also message was displayed 
 to the player when counting down to remove effect of slow 10,5-1 then says Freezing Slow Effect
 Removed */
