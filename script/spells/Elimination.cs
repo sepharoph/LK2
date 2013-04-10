@@ -26,7 +26,7 @@ mines and thorn bombs
         public override int DamPl { get { return 0; } }
         public override int ManaCost { get { return 324; } }
         public override int ManaCostPl { get { return 0; } }
-        public override library.Class ClassReq { get { return library.Class.Swordsman | library.Class.Shaman; } }
+        public override library.Class ClassReq { get { return library.Class.Wizard | library.Class.Shaman; } }
 
         public override SpellSequence Seq
         {
