@@ -6,9 +6,14 @@
         public override int SpellLearnedIcon { get { return 23; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
+/*Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -12% Mana 
+(Max level 99-12 -8%) Per Cast, Damage would Start (w/ 12 Books) 
+690 damage + menCoff, (Max level 99-12 (690damage + menCoff) + 9%)
+This spell could be casted on all enemy's. */
+
         public override int DamBase { get { return 536; } }
         public override int DamPl { get { return 14; } }
-        public override int ManaCost { get { return -78; } } //78
+        public override int ManaCost { get { return -78; } }
         public override int ManaCostPl { get { return 6; } }
         public override LKCamelot.library.Class ClassReq { get { return LKCamelot.library.Class.Shaman; } }
         public override int menCoff { get { return 7; } }
