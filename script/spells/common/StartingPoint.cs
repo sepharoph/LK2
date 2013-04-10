@@ -23,7 +23,6 @@ namespace LKCamelot.script.spells
                 return 9;
             }
         }
-        public override LKCamelot.library.Class ClassReq { get { return LKCamelot.library.Class.Wizard; } }
         public override SpellSequence Seq
         {
             get
