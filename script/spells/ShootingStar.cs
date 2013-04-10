@@ -17,6 +17,8 @@ Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books
 (Max level 99-12 -16) Per Cast, Damage would Start (w/ 12 Books) 
 184, (Max level 99-12 (184 damage) + 9%)*/
 
+        public override Class ClassReq { get { return Class.Knight | Class.Wizard; } }
+
         public override int DamBase { get { return 96; } }
         public override int DamPl { get { return 8; } }
         public override int ManaCost { get { return 32; } }
