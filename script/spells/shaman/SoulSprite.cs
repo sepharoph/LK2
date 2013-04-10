@@ -11,7 +11,7 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 24; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Casted; } }
 
-/* This Spell is supposed to summon a hunter to strike. but only does damage to
+/* This Spell is supposed to summon a Sprite to strike. but only does damage to
 Demons & Magical Monsters NOT PLAYERS.
 Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -132 Mana 
 (Max level 99-12 -76) Per Cast, Damage would Start (w/ 12 Books) 
