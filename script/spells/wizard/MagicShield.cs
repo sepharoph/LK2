@@ -11,6 +11,9 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 27; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Casted; } }
 
+/* Also message was displayed to the player when counting down to remove effect
+    30seconds than 10-1 then says Magic Shield Removed*/
+
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
         public override int ManaCost { get { return 76; } }
