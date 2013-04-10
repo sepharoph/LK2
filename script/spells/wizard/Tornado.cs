@@ -6,6 +6,8 @@
         public override int SpellLearnedIcon { get { return 34; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
+/* Reduces Magic Damage By Monsters/Players by 10%*/
+
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
         public override int ManaCost { get { return -48; } }
