@@ -10,6 +10,11 @@ namespace LKCamelot.script.spells
         public override string Name { get { return "ELECTRONIC BALL"; } }
         public override int SpellLearnedIcon { get { return 58; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
+/* Launches an Electric Ball
+Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -25 Mana 
+(Max level 99-12 -10) Per Cast, Damage would Start (w/ 12 Books) 
+90 damage, (Max level 99-12 (709 damage) + 9%)
+This spell could be casted on all enemy Player's/Monster's. */
 
         public override int DamBase { get { return 35; } }
         public override int DamPl { get { return 5; } }
