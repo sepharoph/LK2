@@ -11,6 +11,12 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 30; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Casted; } }
 
+/*Level of spell reduced mana cost and increased duration, Starting at 10minutes 
+(Max 15 Minutes 99-12) for buff, mana cost would start at 11% (-8% Mana at Max Lvl 99-12).
+This spell could be casted only on self. Also message was displayed to the player 
+when counting down to remove effect
+    30seconds than 10,5-1 then says Magic Shield Removed (Sold at Employee)*/
+
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
         public override int ManaCost { get { return -50; } }
