@@ -11,7 +11,8 @@
 spell costed -10% (Mana Cost -5% Mana at Max Lvl 99:12).
 This spell could be casted on All Players/Monsters to debuff but not on self.
 Also message was displayed to the player when counting down to remove effect
-    30seconds than 10,5-1 then says Stone Curse Removed (Sold at Stall)*/
+    30seconds than 10,5-1 then says Stone Curse Removed
+    Very Comparable to Freezing for Wizards*/
 
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
