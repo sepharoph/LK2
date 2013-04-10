@@ -6,7 +6,11 @@ namespace LKCamelot.script.spells
         public override int SpellLearnedIcon { get { return 64; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
-/* Pulls A Player or Monster next to the caster (1 Square/Cell per book max 12 squares) */
+/* Pulls A Player or Monster next to the caster (1 Square/Cell per book max 12 squares)
+Level of spell reduced mana cost increased distance, mana cost would start (w/ 12 books)
+22% (at 99:12 cost is 18% mana). Distance (w/ 12 books) is 12squares/cells (99:12 14 squares/cells)
+This spell could be casted only on self. Also message was displayed to the player who casted recall
+on the player */
 
         public override int DamBase { get { return 0; } }
         public override int DamPl { get { return 0; } }
