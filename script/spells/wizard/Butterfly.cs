@@ -6,7 +6,7 @@
         public override int SpellLearnedIcon { get { return 71; } }
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
-/* Spell Increased HIT by 10%books 1-4(+10%5-8 +10% 9-12, Total of 30% at 12Books added to HIT, 
+/* Spell Increased HIT by 10%books 1-4(+10%5-8, +20% 9-12, Total of 30% at 12Books added to HIT, 
 Level of spell reduced mana cost and increased duration, Starting at 3minutes (Max 5 Minutes 99-12)
 for buff (Mana Cost would give 4% Mana Back at Max Lvl 99-12).
 This spell could be casted on players to buff and on self.
