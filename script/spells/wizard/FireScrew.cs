@@ -10,7 +10,7 @@ namespace LKCamelot.script.spells
 /*Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -11% Mana 
 (Max level 99-12 -8% Mana Per Cast) Per Cast, Damage would Start (w/ 12 Books) 
 358 damage + menCoff, (Max level 99-12 (358damage + menCoff) + 9%)
-This spell could be casted only on all enemy's. */
+This spell could be casted on all enemy Player's/Monster's. */
 
         public override int DamBase { get { return 270; } }
         public override int DamPl { get { return 8; } }
