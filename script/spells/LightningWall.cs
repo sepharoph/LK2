@@ -7,8 +7,8 @@
         public override LKCamelot.library.MagicType mType { get { return LKCamelot.library.MagicType.Target2; } }
 
 /* This Effect Creates a 5 square line up to 6 squares from the player, this 5 square line
-does damage over time to all monsters standing on the wall, this wall does (w/ books)
-12 240 damage  over 7 seconds. Spell has 10 Second Cooldown so only 1 lightning wall 
+does damage over time to all monsters standing on the wall, this wall does (w/ 12 books)
+240 damage  over 7 seconds. Spell has 10 Second Cooldown so only 1 lightning wall 
 can be up at a time, and each tick of spell can miss if hit too low.
 Level of spell decreased mana cost and increased damage, Starting at (w/ 12Books) -102 Mana 
 (Max level 99:12 -52) Per Cast, Damage would Start (w/ 12 Books) 
