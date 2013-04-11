@@ -18,7 +18,7 @@ namespace LKCamelot.script.item
 		
 		public override int SellPrice { get { return 90000; } }
 
-		public override Class ClassReq { get { return Class.Knight; } }
+		public override Class ClassReq { get { return 0; } }//knight removed per korea table
 		public override ArmorType ArmorType { get { return ArmorType.Helmet; } }
 
 		public GrandeurHelmet() : base (4)
