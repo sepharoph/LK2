@@ -19,7 +19,7 @@ namespace LKCamelot.script.item
         
         public override int SellPrice { get { return 125000; } }
 
-        public override Class ClassReq { get { return Class.Shaman; } }
+        public override Class ClassReq { get { return 0; } }//Shaman removed per korea table
         public override ArmorType ArmorType { get { return ArmorType.Helmet; } }
 
         public PigBasket()
