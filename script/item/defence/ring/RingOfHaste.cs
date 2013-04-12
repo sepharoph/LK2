@@ -3,9 +3,9 @@ using LKCamelot.model;
 
 namespace LKCamelot.script.item
 {
-    public class BraveRing : BaseArmor
+    public class RingOfHaste : BaseArmor
     {
-        public override string Name { get { return "RING OF BRAVERY"; } }
+        public override string Name { get { return "RING OF HASTE"; } }
 
         public override int DamBase { get { return 0; } }
         public override int ACBase { get { return 0; } }
@@ -24,12 +24,12 @@ namespace LKCamelot.script.item
         public override Class ClassReq { get { return 0; } }
         public override ArmorType ArmorType { get { return ArmorType.Ring; } }
 
-        public BraveRing()
+        public RingOfHaste()
             : base(1)
         {
         }
 
-        public BraveRing(Serial serial)
+        public RingOfHaste(Serial serial)
             : base(serial)
         {
         }
